@@ -75,7 +75,10 @@ const About = () => {
               onMouseLeave={() => setIsHovered(false)}
             >
               <p className="font-bold text-[15px] text-[#888888] hover:text-[#252525] cursor-pointer">
+
+                <Link href="/work">
                 Work
+                </Link>
               </p>
 
               {/*Work Dropdown Menu*/}
