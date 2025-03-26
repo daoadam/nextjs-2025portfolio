@@ -31,7 +31,7 @@ export default function RootLayout({
                  border-[10px] border-white rounded-[40px] 
                  flex justify-center items-center pb-[60px] gap-[24px] 
                  bg-gradient-to-br from-[hsla(32,100%,65%,0.2)] to-[hsla(221,87%,85%,0.8)]  
-                 w-[100%] max-w-[65%] min-w-[400px] min-h-[80vh]">
+                 w-[100%] max-w-[65%] min-w-[380px] min-h-[80vh]">
               {children}
             </div>
 

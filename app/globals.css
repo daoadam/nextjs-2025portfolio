@@ -26,9 +26,6 @@ body {
   line-height: 1.65;
 }
 
-
-
-
 .theme-light {
   --brand-primary: rgb(47, 112, 193);
   --brand-secondary: rgb(116, 97, 195);
@@ -64,16 +61,26 @@ body {
   --admonition-danger-rgb-value: 220, 38, 38;
 }
 
+/* Default styles for larger screens (above 768px) */
 .embla {
-  max-width: 50rem;
+  max-width: 48rem;
   margin: auto;
   --slide-height: 19rem;
   --slide-spacing: 1rem;
-  --slide-size: 40%;
+  --slide-size: 40%;  /* Default size for larger screens */
 }
+
+/* For screens smaller than 768px, change the slide size to 100% */
+@media (max-width: 992px) {
+  .embla {
+    --slide-size: 100%; /* Full width on small screens */
+  }
+}
+
 .embla__viewport {
   overflow: hidden;
 }
+
 .embla__container {
   display: flex;
   touch-action: pan-y pinch-zoom;
@@ -86,6 +93,7 @@ body {
   min-width: 0;
   padding-left: var(--slide-spacing);
 }
+
 .embla__slide__img {
   border-radius: 1.8rem;
   display: block;
@@ -94,55 +102,6 @@ body {
   object-fit: cover;
 }
 
-/* For smaller screens, show one greyed-out slide next to the active one */
-@media (max-width: 1199px) {
-  .embla {
-    max-width: 100%;
-    --slide-size: 50%; /* Makes each slide take up most of the space */
-  }
-
-  /* Show only the current and one adjacent slide */
-  .embla__container {
-    display: flex;
-    justify-content: center; /* Center the active slide and next slide */
-  }
-
-  /* Hide the other slides */
-  .embla__slide:not(.is-snapped) {
-    opacity: 0.16; /* Grey out the next slide */
-  }
-
-  /* For the next slide (adjacent to active slide), increase opacity */
-  .embla__slide.is-snapped + .embla__slide {
-    opacity: 0.5; /* Show the next slide with lower opacity */
-  }
-}
-
-/* For smaller screens, show one greyed-out slide next to the active one */
-@media (max-width: 992px) {
-  .embla {
-    max-width: 100%;
-    --slide-size: 100%; /* Makes each slide take up most of the space */
-  }
-
-  /* Show only the current and one adjacent slide */
-  .embla__container {
-    display: flex;
-    justify-content: center; /* Center the active slide and next slide */
-  }
-
-  /* Hide the other slides */
-  .embla__slide:not(.is-snapped) {
-    opacity: 0.16; /* Grey out the next slide */
-  }
-
-  /* For the next slide (adjacent to active slide), increase opacity */
-  .embla__slide.is-snapped + .embla__slide {
-    opacity: 0.5; /* Show the next slide with lower opacity */
-  }
-}
-
-
 .embla__controls {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -150,14 +109,16 @@ body {
   gap: 1.2rem;
   margin-top: 1.8rem;
 }
+
 .embla__buttons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.6rem;
   align-items: center;
 }
+
 .embla__button {
-  -webkit-tap-highlight-color: red;
+  -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
   -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
@@ -179,21 +140,15 @@ body {
   justify-content: center;
 }
 
-@media (max-width: 1199px) {
-  .embla__button {
-    width: 40px;
-    height: fit-content;
-  }
-}
-
-
 .embla__button:disabled {
   color: var(--detail-high-contrast);
 }
+
 .embla__button__svg {
   width: 35%;
   height: 35%;
 }
+
 .embla__dots {
   display: flex;
   flex-wrap: wrap;
@@ -201,13 +156,13 @@ body {
   align-items: center;
   gap: 10px;
   height: fit-content;
-
 }
+
 .embla__dot {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.5); 
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.5);
   -webkit-appearance: none;
   appearance: none;
-  background-color: #ffffff; 
+  background-color: #ffffff;
   touch-action: manipulation;
   display: inline-flex;
   text-decoration: none;
@@ -223,7 +178,7 @@ body {
 }
 
 .embla__dot:after {
-  box-shadow: inset 0 0 0 0.2rem #ccc; 
+  box-shadow: inset 0 0 0 0.2rem #ccc;
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -242,17 +197,4 @@ body {
 
 .embla__slide:not(.is-snapped) {
   opacity: 0.16;
-}
-
-/* Adjust the dot size on smaller screens */
-@media (max-width: 1199px) {
-  .embla__dot {
-    width: 12px; /* Smaller dot size */
-    height: 12px; 
-  }
-
-  .embla__dot:after {
-    width: 12px; /* Smaller inner dot */
-    height: 12px;
-  }
 }
