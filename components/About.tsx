@@ -159,7 +159,7 @@ const About = () => {
         </div>
       )}
 
-      <div className=" relative w-[80%] flex flex-col h-fit mx-auto justify-center items-center xl:justify-between xl:items-start gap-[20px]">
+      <div className=" relative w-[90%] flex flex-col h-fit mx-auto justify-center items-center xl:justify-between xl:items-start gap-[20px]">
         <div className="relative flex flex-col xl:flex-row h-fit mx-auto justify-center items-center xl:justify-between xl:items-start">
           <div className=" relative w-[100%] xl:w-[40%] flex flex-col  justify-center item-center gap-[20px] ">
             <div className="  relative w-fill h-fit flex justify-items-center">
@@ -424,6 +424,10 @@ const About = () => {
           <h1 className="text-[22px] font-semibold mb-5 text-[#1a0f0f]">When not working...</h1>
           <EmblaCarousel slides={SLIDES} options={OPTIONS} />
         </div>
+      </div>
+
+      <div className="flex justify-center font-medium text-[15px] py-[40px] text-[#888888] h-fit w-full">
+        <p>Adam Dao © 2025</p>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ const Hero = () => {
       </p>
 
 
-      <p className="w-full h-fit font-black text-[#4e4e4e] text-[27px] md:text-[50px] -mt-[10px] pb-[20px] text-center  tracking-tight">
+      <p className="w-full h-fit font-black text-[#4e4e4e] text-[27px] md:text-[50px] pb-[20px] text-center  tracking-tight">
         <span className=' text-[hsla(220,100%,61%,1)] transition-all duration-200  hover:bg-amber-600  hover:text-[#ebebeb] hover:opacity-80"'>
           👨‍💻Product Designer
         </span>

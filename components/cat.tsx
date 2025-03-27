@@ -18,7 +18,7 @@ const HoverCat = () => {
         alt="Pixel Sun"
         width={200}
         height={200}
-        className="hidden sm:block w-[100px] md:w-[150px] lg:w-[200px] transition-opacity duration-200"
+        className="hidden sm:block w-[100px] md:w-[150px] xl:w-[200px] transition-opacity duration-200"
       />
       </div>
       
@@ -30,7 +30,7 @@ const HoverCat = () => {
         alt="Pixel Cat"
         width={200}
         height={200}
-        className="hidden sm:block w-[100px] md:w-[150px] lg:w-[200px] transition-opacity duration-200"
+        className="hidden sm:block w-[100px] md:w-[150px] xl:w-[200px] transition-opacity duration-200"
       />
       </div>
     </div>
