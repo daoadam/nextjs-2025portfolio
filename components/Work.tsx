@@ -2,10 +2,12 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Icon from "./icon";
 
 const Work = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     const checkScreenSize = () => {
@@ -24,9 +26,9 @@ const Work = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
-      <div className="flex w-full gap-[35px] p-[45px] justify-center items-center h-fit">
-        <div className="flex justify-between items-center w-full">
+    <div className="min-h-screen overflow-visible">
+      <div className="flex w-full gap-[35px] p-[45px] justify-center items-center h-fit overflow-visible">
+        <div className="flex justify-between items-center w-full overflow-visible">
           <div className="font-bold text-[15px] text-[#333333]">
             adamddao@gmail.com
           </div>
@@ -147,20 +149,18 @@ const Work = () => {
       )}
 
       {/* About Section */}
-      <div className="  relative w-[90%] flex flex-col h-fit mx-auto justify-center items-center xl:justify-between xl:items-start gap-[20px]">
-        <div className="0 relative flex flex-col xl:flex-row h-fit mx-auto justify-center items-center xl:justify-between xl:items-start">
-          <div className=" relative w-[100%] xl:w-[33%] flex flex-col  justify-center item-center gap-[20px] ">
+      <div className="  relative w-[90%] flex flex-col h-fit mx-auto justify-center items-center xl:justify-between xl:items-start gap-[20px] overflow-visible">
+        <div
+          className="0 relative flex flex-col xl:flex-row h-fit mx-auto justify-center items-center xl:justify-between xl:items-start overflow-visible "
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          <div className=" sticky  xl:sticky top-[30px] w-[100%] xl:w-[33%] flex flex-col  justify-center item-center gap-[20px] ">
             <div className="absolute top-[91px] left-[20px] w-[64px] h-[64px] bg-white z-[1] rounded-full">
-              <Image
-                src="/pixeladam3.png"
-                alt="Picture of Chad"
-                width={100}
-                height={100}
-                className="rounded-[80px] border  bg-gradient-to-r from-purple-500 to-indigo-500"
-              />
+              <Icon isHovered={isHovered} />
             </div>
 
-            <div className="position-sticky rounded-[20px] overflow-hidden">
+            <div className=" bg-white rounded-[20px] overflow-hidden">
               <div className="relative w-full h-[132px] overflow-hidden bg-gradient-to-br from-[#c3e0d4] via-[#fffde6] to-[#faf3e6]"></div>
               <div className=" bg-[#ffffff] relative w-fill h-fit flex flex-col justify-items-center gap-[20px] p-[20px] shadow-amber-600 shadow-md hover:shadow-[hsla(220,100%,61%,1)] hover:shadow-lg transition-transform duration-200">
                 <div className="flex flex-col gap-[5px]">
@@ -174,7 +174,7 @@ const Work = () => {
                 </div>
 
                 <div className="font-medium text-[#312121] text-[15px] flex flex-col gap-[1px] tracking-[-0.6px] leading-[1.2]">
-                  <p>🧑‍💻 Product designer &apos; Full-Stack Engineer.</p>
+                  <p>🧑‍💻 Product designer & Full-Stack Engineer.</p>
                   <p>🎓 Student @ The University of Adelaide.</p>
                   <p>
                     😻 Passionate about UX, productivity, AI, and accessibility.
@@ -201,7 +201,6 @@ const Work = () => {
                         width={40}
                         height={40}
                         className="scale-60"
-                        
                       />
                     </Link>
                   </button>
@@ -218,13 +217,16 @@ const Work = () => {
             </div>
 
             <div className="bg-[#ffffff] rounded-[16px]  relative w-fill h-fit flex flex-col justify-items-center gap-[10px] p-[20px] shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
-            <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
-              • Experience designing and developing interactive web applications, with a focus on user-friendly and scalable interfaces. <br/> <br/>
-              • Skilled in conducting UX research, including user surveys, interviews, and usability testing, to enhance product design decisions. <br/> <br/>
-              • Proficient in front-end development, interaction design, and maintaining consistency within evolving design systems.
-            </p>
-
-
+              <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
+                • Experience designing and developing interactive web
+                applications, with a focus on user-friendly and scalable
+                interfaces. <br /> <br />
+                • Skilled in conducting UX research, including user surveys,
+                interviews, and usability testing, to enhance product design
+                decisions. <br /> <br />• Proficient in front-end development,
+                interaction design, and maintaining consistency within evolving
+                design systems.
+              </p>
             </div>
 
             <div className="bg-[#ffffff] rounded-[16px]  relative w-fill h-fit flex flex-col justify-items-center p-[20px]  shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">

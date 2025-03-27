@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import  EmblaCarousel  from "./EmblaCarousel";
 import { EmblaOptionsType } from 'embla-carousel'
+import Icon from "./icon";
 
 const OPTIONS: EmblaOptionsType = { loop: true, align: "start" }
 
@@ -166,16 +167,18 @@ const About = () => {
               <h1 className="font-bold text-[#1a0f0f] text-[22px] ">About me</h1>
             </div>
 
-            <div className=" bg-[#ffffff] rounded-[16px] relative w-fill h-fit flex flex-col justify-items-center gap-[10px] p-[20px] shadow-amber-600 shadow-md hover:shadow-[hsla(220,100%,61%,1)] hover:shadow-lg transition-transform duration-200">
-              <div className="rounded-[8px]">
-                <Image
-                  src="/pixeladam3.png"
-                  alt="Picture of Chad"
-                  width={100}
-                  height={100}
-                  className="rounded-[80px] border border-amber-600 bg-gradient-to-r from-purple-500 to-indigo-500"
-                />
+            {/* Hover Container - Triggers hover when entering this section */}
+            <div
+              className="bg-[#ffffff] rounded-[16px] relative w-fill h-fit flex flex-col justify-items-center gap-[10px] p-[20px] shadow-amber-600 shadow-md hover:shadow-[hsla(220,100%,61%,1)] hover:shadow-lg transition-transform duration-200"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              {/* Icon - Also listens for hover events */}
+              <div className="rounded-full overflow-hidden w-fit">
+                <Icon isHovered={isHovered} />
               </div>
+
+              
               <h1 className="font-semibold text-[#1a0f0f] text-[18px]">
                 My Story
               </h1>
