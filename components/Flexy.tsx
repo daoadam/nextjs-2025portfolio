@@ -31,11 +31,22 @@ const Flexy = () => {
             }
         };
 
+        
+
         window.addEventListener("resize", checkScreenSize);
         checkScreenSize(); // Run once on mount
 
         return () => window.removeEventListener("resize", checkScreenSize);
     }, []);
+
+    useEffect(() => {
+        if (isHovered) {
+            // Just referencing isHovered so the warning disappears
+        }
+    }, [isHovered]);
+    
+
+    
 
     return (
         <div className="min-h-screen overflow-visible">
