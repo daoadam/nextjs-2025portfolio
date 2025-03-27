@@ -13,6 +13,7 @@ import Image from "next/image";
 type PropType = {
   slides: string[];
   options?: EmblaOptionsType;
+  className?: string;
 };
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
@@ -39,8 +40,8 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               <Image
                 className="embla__slide__img"
                 src={imageSrc} // ✅ Now uses actual image URLs
-                width={600}
-                height={350}
+                width={1000}
+                height={1000}
                 alt={`Slide ${index + 1}`}
                 priority={index === 0} // Load first image fast
               />

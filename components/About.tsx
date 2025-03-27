@@ -85,22 +85,20 @@ const About = () => {
               {/*Work Dropdown Menu*/}
               {isHovered && (
                 <div className="absolute z-[50] pt-[10px] rounded-[15px] ">
-                  <ul className="border border-amber-600 rounded-[7px]">
+                  <ul className=" rounded-[7px]">
                     <li className=" rounded-t-[8px] border-t border-l border-r border-transparent w-[176px] bg-[#ffffff] cursor-pointer">
                       <p className=" p-2 font-medium text-[15px] text-[#888888] hover:text-[#252525]">
-                        Project 1
+                        WhereNow?
                       </p>
                     </li>
                     <li className=" pl-2 pr-2 border border-transparent  w-[176px] font-medium text-[15px] bg-[#ffffff]">
-                      <p className="pt-2 pb-2 font-medium text-[15px] border-y border-[#888888] text-[#888888] hover:text-[#252525] cursor-pointer">
-                        Project 1
+                      <p className="pt-2 pb-2 font-medium text-[15px] border-y text-[#888888] hover:text-[#252525] cursor-pointer">
+                        <Link href="/flexy">
+                        Flexy
+                        </Link>
                       </p>
                     </li>
-                    <li className=" rounded-b-[8px] border-b border-l border-r border-transparent w-[176px] font-medium text-[15px] bg-[#ffffff] cursor-pointer">
-                      <p className="p-2 font-medium text-[15px] text-[#888888] hover:text-[#252525]">
-                        Project 1
-                      </p>
-                    </li>
+                    
                   </ul>
                 </div>
               )}
@@ -108,9 +106,7 @@ const About = () => {
             <p className="font-bold text-[15px] text-[#333333] hover:text-[#252525] cursor-pointer">
               About
             </p>
-            <p className="font-bold text-[15px] text-[#888888] hover:text-[#252525] cursor-pointer">
-              Other
-            </p>
+           
             <p className="font-bold text-[15px] text-[#888888] hover:text-[#252525] cursor-pointer">
               <Link 
                 href="https://docs.google.com/document/d/13yIsupujsWupLxjXvPQ-OuslObz2rOOAjm9TGrWfs6Y/edit?usp=sharing"
@@ -147,11 +143,7 @@ const About = () => {
               <p className="font-medium text-[15px] text-[#000000]">About</p>
             </li>
 
-            <li className="border-t border-[#8b8b8b] py-3">
-              <p className="font-medium text-[15px] text-[#252525] hover:text-[#252525]">
-                Other
-              </p>
-            </li>
+         
 
             <li className="border-t border-[#8b8b8b] py-3">
               <p className="font-medium text-[15px] text-[#252525] hover:text-[#252525]">

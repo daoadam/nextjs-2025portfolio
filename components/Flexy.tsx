@@ -2,7 +2,19 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Icon from "./icon";
+
+import EmblaCarousel from "./EmblaCarousel";
+import { EmblaOptionsType } from "embla-carousel";
+
+const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
+
+const SLIDES = [
+  "/flexy1.jpg",
+  "/flexy2.png",
+  "/flexy3.jpg",
+  "/flexy4.jpg",
+  "/flexy5.jpg",
+];
 
 const Flexy = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -74,19 +86,15 @@ const Flexy = () => {
                   <ul className=" rounded-[7px]">
                     <li className="rounded-t-[8px] border-t border-l border-r border-transparent w-[176px] bg-[#ffffff] cursor-pointer">
                       <p className="p-2 font-medium text-[15px] text-[#888888] hover:text-[#252525]">
-                        Flexy
+                        WhereNow?
                       </p>
                     </li>
                     <li className="pl-2 pr-2 border border-transparent w-[176px] font-medium text-[15px] bg-[#ffffff]">
-                      <p className="pt-2 pb-2 font-medium text-[15px] border-y border-[#888888] text-[#888888] hover:text-[#252525] cursor-pointer">
-                        Project 2
+                      <p className="pt-2 pb-2 font-medium text-[15px] border-y  text-[#888888] hover:text-[#252525] cursor-pointer">
+                        <Link href="/flexy">Flexy</Link>
                       </p>
                     </li>
-                    <li className="rounded-b-[8px] border-b border-l border-r border-transparent w-[176px] font-medium text-[15px] bg-[#ffffff] cursor-pointer">
-                      <p className="p-2 font-medium text-[15px] text-[#888888] hover:text-[#252525]">
-                        Project 3
-                      </p>
-                    </li>
+                   
                   </ul>
                 </div>
               )}
@@ -94,9 +102,7 @@ const Flexy = () => {
             <p className="font-bold text-[15px] text-[#888888] hover:text-[#252525] cursor-pointer">
               <Link href="/about">About</Link>
             </p>
-            <p className="font-bold text-[15px] text-[#888888] hover:text-[#252525] cursor-pointer">
-              Other
-            </p>
+            
             <p className="font-bold text-[15px] text-[#888888] hover:text-[#252525] cursor-pointer">
               <a
                 href="https://docs.google.com/document/d/13yIsupujsWupLxjXvPQ-OuslObz2rOOAjm9TGrWfs6Y/edit?usp=sharing"
@@ -133,11 +139,7 @@ const Flexy = () => {
               <p className="font-medium text-[15px] text-[#000000]">About</p>
             </li>
 
-            <li className="border-t border-[#8b8b8b] py-3">
-              <p className="font-medium text-[15px] text-[#252525] hover:text-[#252525]">
-                Other
-              </p>
-            </li>
+           
 
             <li className="border-t border-[#8b8b8b] py-3">
               <p className="font-medium text-[15px] text-[#252525] hover:text-[#252525]">
@@ -156,13 +158,8 @@ const Flexy = () => {
           onMouseLeave={() => setIsHovered(false)}
         >
           <div className=" hidden xl:flex xl:sticky top-[30px] w-[100%] xl:w-[20%]  flex-col  justify-center item-center gap-[20px] ">
-            
-
             <div className=" bg-white rounded-[20px] overflow-hidden">
-              
               <div className=" bg-[#ffffff] relative w-fill h-fit flex flex-col justify-items-center gap-[20px] p-[20px] shadow-amber-600 shadow-md hover:shadow-[hsla(220,100%,61%,1)] hover:shadow-lg transition-transform duration-200">
-                
-
                 <div className="flex flex-col justify-start items-start h-fit w-full gap-[10px] ">
                   <button className="flex justify-center items-start h-[30px] w-[30px]  rounded-full bg-[#f3f3f3]">
                     <Link href="https://www.linkedin.com/in/adamddao/">
@@ -176,58 +173,47 @@ const Flexy = () => {
                     </Link>
                   </button>
 
-                <div className="font-medium text-[#000000] text-[15px]  gap-[10px]">
-                    <p>WhereNow? Web App</p>
-                </div>
+                  <div className="font-medium text-[#000000] text-[15px]  gap-[10px]">
+                    <p>Flexy Mobile App</p>
+                  </div>
 
-                <div className="flex flex-col text-[15px] font-medium text-[#8a8a8a] gap-[10px] pt-[10px]">
+                  <div className="flex flex-col text-[15px] font-medium text-[#8a8a8a] gap-[10px] pt-[10px]">
+                  <p>Defining the problem & MVP</p>
+                   
                     
-                        <p>Overview</p>
-                        <p>Research & Insight</p>
-                        <p>Defining the problem & MVP</p>
-                        <p>Testing & User feedback</p>
-                        <p>Implementation & Features</p>
-                        <p>Outcomes</p>
-                    
-                </div>
+                    <p>Research & Insight</p>
 
-                <div className="w-full h-[1px] bg-[#8a8a8a]">
+                    <p>Testing & User feedback</p>
+                    <p>Implementation & Features</p>
+                    <p>Outcomes</p>
+                  </div>
 
-                </div>
+                  <div className="w-full h-[1px] bg-[#8a8a8a]"></div>
 
-                <div className="font-medium text-[#000000] text-[15px]  gap-[10px]">
+                  <div className="font-medium text-[#000000] text-[15px]  gap-[10px]">
                     <p>Next: Project 2</p>
-                </div>
-
-                  
-                
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className=" relative w-[100%] xl:w-[75%] flex flex-col justify-center item-center gap-[20px]">
-            <Image
-              src=""
-              alt=""
-              height={100}
-              width={500}
-              className="w-full h-auto rounded-[20px] "
-            />
+          <div className=" relative w-[100%] xl:w-[75%] flex flex-col justify-center item-center gap-[20px]  ">
+            <div className=" bg-[#c276dd] flex flex-col items-start p-[20px] w-full rounded-[20px] shadow-amber-600 shadow-md hover:shadow-[hsla(220,100%,61%,1)] hover:shadow-lg transition-transform duration-200 ">
+              <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+            </div>
 
             <div className="bg-[#ffffff] rounded-[16px]  relative w-fill h-fit flex flex-col justify-items-center gap-[10px] p-[20px] shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
-              <h1 className="font-bold text-[#1a0f0f] text-[22px] pt-[20px] xl:pt-[0px]">
-                Selected Works
+              <h1 className="font-bold text-[#1a0f0f] text-[22px]  xl:pt-[0px]">
+                Flexy Mobile App
               </h1>
 
               <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
-                Experience designing and developing interactive web
-                applications, with a focus on user-friendly and scalable
-                interfaces. Skilled in conducting UX research, including user
-                surveys, interviews, and usability testing, to enhance product
-                design decisions. Proficient in front-end development,
-                interaction design, and maintaining consistency within evolving
-                design systems.
+                I researched, designed and optimized key touchpoints in Flexy’s
+                onboarding flow. I conducted rapid iteration cycles, refining
+                the experience to make sign-ups smoother and engagement
+                stronger. I worked closely with research and built wireframes
+                and mock-ups based off information.
               </p>
 
               <div className="flex flex-wrap w-full justify-between items-center">
@@ -245,7 +231,7 @@ const Flexy = () => {
                     Duration
                   </p>
                   <p className="text-[#000000] text-[15px] font-medium w-fit h-fit">
-                    Mar - Aug 2025
+                    Aug - Nov 2024
                   </p>
                 </div>
 
@@ -270,283 +256,260 @@ const Flexy = () => {
                 </div>
               </div>
 
-              <div className="flex bg-amber-500 h-[1px] w-fill my-[40px]"></div>
+              <div className="flex bg-black h-[1px] w-fill my-[20px]"></div>
 
-              <h1 className="font-bold text-[#1a0f0f] text-[18px] pt-[20px] xl:pt-[0px]">
-                Overview
+              <h1 className="font-bold text-[#1a0f0f] text-[18px]  xl:pt-[0px]">
+                Context
               </h1>
 
               <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
-                Experience designing and developing interactive web
-                applications, with a focus on user-friendly and scalable
-                interfaces. Skilled in conducting UX research, including user
-                surveys, interviews, and usability testing, to enhance product
-                design decisions. Proficient in front-end development,
-                interaction design, and maintaining consistency within evolving
-                design systems.
+                Flexy is a conceptual beauty treatment booking platform designed
+                to streamline appointment scheduling for salons and clients.{" "}
+                <br /> <br />
+                Through research and iterative design, I led efforts to improve
+                the user experience, focusing on reducing booking friction,
+                enhancing provider-client communication, and increasing
+                appointment completion rates.
               </p>
 
-              <h1 className="font-bold text-[#1a0f0f] text-[18px] pt-[20px] xl:pt-[0px]">
+              <h1 className="font-bold text-[#1a0f0f] text-[18px]  xl:pt-[0px]">
                 My Role
               </h1>
 
               <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
-                Experience designing and developing interactive web
-                applications, with a focus on user-friendly and scalable
-                interfaces. Skilled in conducting UX research, including user
-                surveys, interviews, and usability testing, to enhance product
-                design decisions. Proficient in front-end development,
-                interaction design, and maintaining consistency within evolving
-                design systems.
+                I was the lead designer and researcher on the team. My team also
+                had two business majors.
               </p>
-
-              <h1 className="font-bold text-[#1a0f0f] text-[18px] pt-[20px] xl:pt-[0px]">
-                Problem Statement
-              </h1>
-
-              <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
-                Experience designing and developing interactive web
-                applications, with a focus on user-friendly and scalable
-                interfaces. Skilled in conducting UX research, including user
-                surveys, interviews, and usability testing, to enhance product
-                design decisions. Proficient in front-end development,
-                interaction design, and maintaining consistency within evolving
-                design systems.
-              </p>
-
-              <Image
-                src=""
-                alt=""
-                height={100}
-                width={500}
-                className="w-full h-auto rounded-[20px] "
-              />
             </div>
 
             <div className="bg-[#ffffff] rounded-[16px]  relative w-fill h-fit flex flex-col justify-items-center gap-[10px] p-[20px] shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
-              <h2 className="font-semibold text-[#888888] text-[13px] pt-[20px] xl:pt-[0px]">
-                Resarch & Insights
-              </h2>
-
-              <h1 className="font-bold text-[#000000] text-[20px] pt-[20px] xl:pt-[0px]">
-                Discovery
-              </h1>
-
-              <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
-                Experience designing and developing interactive web
-                applications, with a focus on user-friendly and scalable
-                interfaces. Skilled in conducting UX research, including user
-                surveys, interviews, and usability testing, to enhance product
-                design decisions. Proficient in front-end development,
-                interaction design, and maintaining consistency within evolving
-                design systems.
-              </p>
-
-              <div className="flex bg-amber-500 h-[1px] w-fill my-[40px]"></div>
-
-              <h1 className="font-bold text-[#1a0f0f] text-[18px] pt-[20px] xl:pt-[0px]">
-                Problem Statement
-              </h1>
-
-              <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
-                Experience designing and developing interactive web
-                applications, with a focus on user-friendly and scalable
-                interfaces. Skilled in conducting UX research, including user
-                surveys, interviews, and usability testing, to enhance product
-                design decisions. Proficient in front-end development,
-                interaction design, and maintaining consistency within evolving
-                design systems.
-              </p>
-
-              <div className="bg-[#fcf9f2] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center gap-[10px] p-[20px] ">
-                <ul className="font-medium text-[#9c8f6d] text-[15px] flex flex-col gap-[10px] px-[20px] tracking-[-0.2px] leading-[1.2] list-decimal items-start">
-                  <li>
-                    Experience designing and developing interactive web
-                    applications, with a focus on user-friendly and scalable
-                    interfaces.
-                  </li>
-                  <li>
-                    Skilled in conducting UX research, including user surveys,
-                    interviews, and usability testing, to enhance product design
-                    decisions.
-                  </li>
-                  <li>
-                    Proficient in front-end development, interaction design, and
-                    maintaining consistency within evolving design systems.
-                  </li>
-                </ul>
-              </div>
-
-              <h1 className="font-bold text-[#1a0f0f] text-[18px] pt-[20px] xl:pt-[0px]">
-                Significance
-              </h1>
-
-              <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
-                Experience designing and developing interactive web
-                applications, with a focus on user-friendly and scalable
-                interfaces. Skilled in conducting UX research, including user
-                surveys, interviews, and usability testing, to enhance product
-                design decisions. Proficient in front-end development,
-                interaction design, and maintaining consistency within evolving
-                design systems.
-              </p>
-
-              <Image
-                src=""
-                alt=""
-                height={100}
-                width={500}
-                className="w-full h-auto rounded-[20px] "
-              />
-            </div>
-
-            <div className="bg-[#ffffff] rounded-[16px]  relative w-fill h-fit flex flex-col justify-items-center gap-[10px] p-[20px] shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
-              <h2 className="font-semibold text-[#888888] text-[13px] pt-[20px] xl:pt-[0px]">
+              <h2 className="font-semibold text-[#888888] text-[13px]  xl:pt-[0px]">
                 Defining the problem & MVP
               </h2>
 
-              <h1 className="font-bold text-[#000000] text-[20px] pt-[20px] xl:pt-[0px]">
-                Discovery
-              </h1>
-
-              <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
-                Experience designing and developing interactive web
-                applications, with a focus on user-friendly and scalable
-                interfaces. Skilled in conducting UX research, including user
-                surveys, interviews, and usability testing, to enhance product
-                design decisions. Proficient in front-end development,
-                interaction design, and maintaining consistency within evolving
-                design systems.
-              </p>
-
-              <div className="flex bg-amber-500 h-[1px] w-fill my-[40px]"></div>
-
-              <h1 className="font-bold text-[#1a0f0f] text-[18px] pt-[20px] xl:pt-[0px]">
+              <h1 className="font-bold text-[#000000] text-[20px]  xl:pt-[0px]">
                 Problem Statement
               </h1>
 
               <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
-                Experience designing and developing interactive web
-                applications, with a focus on user-friendly and scalable
-                interfaces. Skilled in conducting UX research, including user
-                surveys, interviews, and usability testing, to enhance product
-                design decisions. Proficient in front-end development,
-                interaction design, and maintaining consistency within evolving
-                design systems.
+                Booking salon appointments is frustrating, especially during
+                peak hours or when choosing a specific technician. <br />
+                <br /> Many booking systems lack real-time availability and send
+                unclear or missed notifications, leading to confusion and wasted
+                time.
+                <br /> <br /> Users need a smoother booking process, better
+                communication, and real-time updates to improve their
+                experience.
+              </p>
+
+              <div className="flex p-[20px] text-[15px] font-normal justify-center items-center w-full bg-black tracking-[-0.2px] leading-[1.2] rounded-[8px]">
+                <p className="italic text-[#eeeeee]">
+                  &quot;Booking an appointment shouldn’t feel like a part-time
+                  job. I hate calling salons just to be told they’re fully
+                  booked&quot; <br />- Customer
+                </p>
+              </div>
+
+              <div className="flex p-[20px] text-[15px] font-normal justify-center items-center w-full bg-black tracking-[-0.2px] leading-[1.2] rounded-[8px]">
+                <p className="italic text-[#eeeeee]">
+                  &quot;It’s frustrating when clients don’t show up, especially
+                  when I could’ve given that spot to someone else&quot; <br />-
+                  Barber
+                </p>
+              </div>
+
+              <div className="flex bg-black h-[1px] w-fill my-[20px]"></div>
+
+              <h1 className="font-bold text-[#000000] text-[20px]  xl:pt-[0px]">
+                Competitor Analysis
+              </h1>
+
+              <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
+                I studied competitor platforms and their limitations. Many
+                existing tools focused on either appointment booking or
+                reminders but rarely provided both in a seamless way. Some
+                solutions were overly complicated, making them unappealing for
+                smaller salons that needed simple yet effective tools. This led
+                to a lot of businesses booking solely on phone numbers.
+              </p>
+
+              <h1 className="font-bold text-[#000000] text-[20px]  xl:pt-[0px]">
+                Key features for the MVP
+              </h1>
+
+              <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
+                Researching our target users and competitors highlighted a gap
+                in the market for booking booking treatments. This analysis
+                enabled us to construct a blueprint of the Flexy app focused on
+                providing a centralised location for beauty services and
+                convenient booking.
               </p>
 
               <div className="bg-[#fcf9f2] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center gap-[10px] p-[20px] ">
                 <ul className="font-medium text-[#9c8f6d] text-[15px] flex flex-col gap-[10px] px-[20px] tracking-[-0.2px] leading-[1.2] list-decimal items-start">
                   <li>
-                    Experience designing and developing interactive web
-                    applications, with a focus on user-friendly and scalable
-                    interfaces.
+                    Mobile Interface: Most users prefer booking via mobile.
                   </li>
                   <li>
-                    Skilled in conducting UX research, including user surveys,
-                    interviews, and usability testing, to enhance product design
-                    decisions.
+                    Calendar with notifications: Many clients miss appointments
+                    due to lack of reminders.
                   </li>
                   <li>
-                    Proficient in front-end development, interaction design, and
-                    maintaining consistency within evolving design systems.
+                    Pre-pay system: Owners struggle with last-minute
+                    cancellations, impacting revenue.
+                  </li>
+                  <li>
+                    Time-slots and messaging: Clients often rely on Instagram
+                    DMs or texts instead of official booking apps especially for
+                    more specialised services.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-[#ffffff] rounded-[16px]  relative w-fill h-fit flex flex-col justify-items-center gap-[10px] p-[20px] shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
+              <h2 className="font-semibold text-[#888888] text-[13px]  xl:pt-[0px]">
+                User Research & Insights
+              </h2>
+
+              <h1 className="font-bold text-[#000000] text-[20px]  xl:pt-[0px]">
+                Discovery
+              </h1>
+
+              <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
+                To uncover common pain points during booking a beauty treatment
+                service, I conducted 20 user interviews with classmates,
+                alongside a survey receiving 50 responses.
+              </p>
+
+              <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
+                The key insights were
+              </p>
+
+              <div className="bg-[#fcf9f2] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center gap-[10px] p-[20px] ">
+                <ul className="font-medium text-[#9c8f6d] text-[15px] flex flex-col gap-[10px] px-[20px] tracking-[-0.2px] leading-[1.2] list-decimal items-start">
+                  <li>
+                    Most people don&apos;t cancel appointments because it is not
+                    simple enough and 30% of users will just skip their
+                    appointment without notice
+                  </li>
+                  <li>
+                    90% of users rely on multiple apps (Google Calendar, email,
+                    and messaging platforms) to keep track of appointments
+                    manually.
+                  </li>
+                  <li>
+                    Clarity with business to customer is important with 70% of
+                    people for clear communications
+                  </li>
+                  <li>
+                    Users often face challenges in finding open slots,
+                    especially during peak hours and when preferring specific
+                    technicians.
                   </li>
                 </ul>
               </div>
 
-              <h1 className="font-bold text-[#1a0f0f] text-[18px] pt-[20px] xl:pt-[0px]">
+              <h1 className="font-bold text-[#1a0f0f] text-[18px]  xl:pt-[0px]">
                 Significance
               </h1>
 
-              <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
-                Experience designing and developing interactive web
-                applications, with a focus on user-friendly and scalable
-                interfaces. Skilled in conducting UX research, including user
-                surveys, interviews, and usability testing, to enhance product
-                design decisions. Proficient in front-end development,
-                interaction design, and maintaining consistency within evolving
-                design systems.
-              </p>
+              <div className="flex flex-row flex-wrap w-full justify-center gap-[10px]">
+                <div className="flex xl:w-[33%] p-[20px] text-[15px] font-normal justify-center items-center bg-black tracking-[-0.2px] leading-[1.2] rounded-[8px]">
+                  <p className="italic text-[#eeeeee]">
+                    No-shows (30%) happen because canceling is too hard → <br />
+                    <br />
+                    Add one-tap cancellation and automated reminders.
+                  </p>
+                </div>
 
-              <Image
-                src=""
-                alt=""
-                height={100}
-                width={500}
-                className="w-full h-auto rounded-[20px] "
-              />
+                <div className="flex xl:w-[33%] p-[20px] text-[15px] font-normal justify-center items-center  bg-black tracking-[-0.2px] leading-[1.2] rounded-[8px]">
+                  <p className="italic text-[#eeeeee]">
+                    90% manually track bookings → <br />
+                    <br />
+                    Integrate Google/Apple Calendar sync and push notifications.
+                  </p>
+                </div>
+                <div className="flex xl:w-[33%] p-[20px] text-[15px] font-normal justify-center items-center  bg-black tracking-[-0.2px] leading-[1.2] rounded-[8px]">
+                  <p className="italic text-[#eeeeee]">
+                    70% need clearer communication → <br /> <br />
+                    Implement real-time confirmations and automated updates.
+                  </p>
+                </div>
+
+                <div className="flex xl:w-[33%] p-[20px] text-[15px] font-normal justify-center items-center  bg-black tracking-[-0.2px] leading-[1.2] rounded-[8px]">
+                  <p className="italic text-[#eeeeee]">
+                    Finding slots is frustrating → <br /> <br /> Show real-time
+                    availability and offer a waitlist feature.
+                  </p>
+                </div>
+              </div>
+
+              <div className=" h-fit w-fill flex justify-center items-center">
+                <Image
+                  src="/affinityflexy.jpg"
+                  alt=""
+                  height={2000}
+                  width={2000}
+                  className="w-[75%]"
+                />
+              </div>
+
+              <div className=" h-fit w-fill flex justify-center items-center">
+                <Image
+                  src="/featurematrixflexy.jpg"
+                  alt=""
+                  height={2000}
+                  width={2000}
+                  className="w-[90%]"
+                />
+              </div>
             </div>
 
             <div className="bg-[#ffffff] rounded-[16px]  relative w-fill h-fit flex flex-col justify-items-center gap-[10px] p-[20px] shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
-              <h2 className="font-semibold text-[#888888] text-[13px] pt-[20px] xl:pt-[0px]">
+              <h2 className="font-semibold text-[#888888] text-[13px]  xl:pt-[0px]">
                 Testing & User feedback
               </h2>
 
-              <h1 className="font-bold text-[#000000] text-[20px] pt-[20px] xl:pt-[0px]">
-                Discovery
+              <h1 className="font-bold text-[#000000] text-[20px]  xl:pt-[0px]">
+                User Feedback
               </h1>
 
               <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
-                Experience designing and developing interactive web
-                applications, with a focus on user-friendly and scalable
-                interfaces. Skilled in conducting UX research, including user
-                surveys, interviews, and usability testing, to enhance product
-                design decisions. Proficient in front-end development,
-                interaction design, and maintaining consistency within evolving
-                design systems.
-              </p>
-
-              <div className="flex bg-amber-500 h-[1px] w-fill my-[40px]"></div>
-
-              <h1 className="font-bold text-[#1a0f0f] text-[18px] pt-[20px] xl:pt-[0px]">
-                Problem Statement
-              </h1>
-
-              <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
-                Experience designing and developing interactive web
-                applications, with a focus on user-friendly and scalable
-                interfaces. Skilled in conducting UX research, including user
-                surveys, interviews, and usability testing, to enhance product
-                design decisions. Proficient in front-end development,
-                interaction design, and maintaining consistency within evolving
-                design systems.
+                To validate the effectiveness of our solutions, we launched an
+                A/B test comparing Flexy’s new interface with the existing
+                scheduling workflows used by providers.
               </p>
 
               <div className="bg-[#fcf9f2] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center gap-[10px] p-[20px] ">
                 <ul className="font-medium text-[#9c8f6d] text-[15px] flex flex-col gap-[10px] px-[20px] tracking-[-0.2px] leading-[1.2] list-decimal items-start">
                   <li>
-                    Experience designing and developing interactive web
-                    applications, with a focus on user-friendly and scalable
-                    interfaces.
+                    Providers valued automated reminders, but some preferred
+                    manual control over notifications.
                   </li>
                   <li>
-                    Skilled in conducting UX research, including user surveys,
-                    interviews, and usability testing, to enhance product design
-                    decisions.
+                    Clients wanted more flexibility, leading to the enhancement
+                    of self-service rescheduling.
                   </li>
                   <li>
-                    Proficient in front-end development, interaction design, and
-                    maintaining consistency within evolving design systems.
+                    Financial tracking was helpful, but users requested
+                    additional granularity in reporting.
                   </li>
                 </ul>
               </div>
 
-              <h1 className="font-bold text-[#1a0f0f] text-[18px] pt-[20px] xl:pt-[0px]">
-                Significance
+              <h1 className="font-bold text-[#1a0f0f] text-[18px]  xl:pt-[0px]">
+                Improvements Based on Feedback
               </h1>
 
               <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
-                Experience designing and developing interactive web
-                applications, with a focus on user-friendly and scalable
-                interfaces. Skilled in conducting UX research, including user
-                surveys, interviews, and usability testing, to enhance product
-                design decisions. Proficient in front-end development,
-                interaction design, and maintaining consistency within evolving
-                design systems.
+                Enabled manual adjustments for appointment reminders.
+                Streamlined the rescheduling process to improve usability.
+                Expanded financial tracking for clearer business insights.
               </p>
 
               <Image
-                src=""
+                src="/arrow.png"
                 alt=""
                 height={100}
                 width={500}
@@ -555,60 +518,49 @@ const Flexy = () => {
             </div>
 
             <div className="bg-[#ffffff] rounded-[16px]  relative w-fill h-fit flex flex-col justify-items-center gap-[10px] p-[20px] shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
-              <h2 className="font-semibold text-[#888888] text-[13px] pt-[20px] xl:pt-[0px]">
+              <h2 className="font-semibold text-[#888888] text-[13px]  xl:pt-[0px]">
                 Implementation & Features
               </h2>
 
-              <h1 className="font-bold text-[#000000] text-[20px] pt-[20px] xl:pt-[0px]">
-                Discovery
+              <h1 className="font-bold text-[#000000] text-[20px]  xl:pt-[0px]">
+                Key Design Choices
               </h1>
 
               <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
-                Experience designing and developing interactive web
-                applications, with a focus on user-friendly and scalable
-                interfaces. Skilled in conducting UX research, including user
-                surveys, interviews, and usability testing, to enhance product
-                design decisions. Proficient in front-end development,
-                interaction design, and maintaining consistency within evolving
-                design systems.
+                Flexy’s final design balanced automation with provider control,
+                ensuring a flexible yet structured approach to scheduling.
               </p>
 
-              <div className="flex bg-amber-500 h-[1px] w-fill my-[40px]"></div>
-
-              <h1 className="font-bold text-[#1a0f0f] text-[18px] pt-[20px] xl:pt-[0px]">
+              <h1 className="font-bold text-[#1a0f0f] text-[18px]  xl:pt-[0px]">
                 Problem Statement
               </h1>
-
-              <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
-                Experience designing and developing interactive web
-                applications, with a focus on user-friendly and scalable
-                interfaces. Skilled in conducting UX research, including user
-                surveys, interviews, and usability testing, to enhance product
-                design decisions. Proficient in front-end development,
-                interaction design, and maintaining consistency within evolving
-                design systems.
-              </p>
 
               <div className="bg-[#fcf9f2] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center gap-[10px] p-[20px] ">
                 <ul className="font-medium text-[#9c8f6d] text-[15px] flex flex-col gap-[10px] px-[20px] tracking-[-0.2px] leading-[1.2] list-decimal items-start">
                   <li>
-                    Experience designing and developing interactive web
-                    applications, with a focus on user-friendly and scalable
-                    interfaces.
+                    AI-Powered Smart Scheduling: Suggests optimal appointment
+                    slots based on provider trends.
                   </li>
                   <li>
-                    Skilled in conducting UX research, including user surveys,
-                    interviews, and usability testing, to enhance product design
-                    decisions.
+                    Automated Notifications: Ensures timely reminders for both
+                    providers and clients.
                   </li>
                   <li>
-                    Proficient in front-end development, interaction design, and
-                    maintaining consistency within evolving design systems.
+                    Integrated Calendar Sync: Real-time updates across different
+                    scheduling tools.
+                  </li>
+                  <li>
+                    Financial Management Dashboard: Provides earnings
+                    projections and payout tracking.
+                  </li>
+                  <li>
+                    Cross-Device Accessibility: Optimized for mobile and web
+                    use.
                   </li>
                 </ul>
               </div>
 
-              <h1 className="font-bold text-[#1a0f0f] text-[18px] pt-[20px] xl:pt-[0px]">
+              <h1 className="font-bold text-[#1a0f0f] text-[18px]  xl:pt-[0px]">
                 Significance
               </h1>
 
@@ -622,8 +574,35 @@ const Flexy = () => {
                 design systems.
               </p>
 
+              <div className="flex flex-col p-[20px] text-[15px] font-normal justify-center items-center w-full bg-black tracking-[-0.2px] leading-[1.2] rounded-[8px]">
+                <p className="italic text-[#eeeeee]">
+                  No-shows (30%) happen because canceling is too hard → Add
+                  one-tap cancellation and automated reminders.
+                </p>
+              </div>
+
+              <div className="flex p-[20px] text-[15px] font-normal justify-center items-center w-full bg-black tracking-[-0.2px] leading-[1.2] rounded-[8px]">
+                <p className="italic text-[#eeeeee]">
+                  90% manually track bookings → Integrate Google/Apple Calendar
+                  sync and push notifications.
+                </p>
+              </div>
+              <div className="flex p-[20px] text-[15px] font-normal justify-center items-center w-full bg-black tracking-[-0.2px] leading-[1.2] rounded-[8px]">
+                <p className="italic text-[#eeeeee]">
+                  70% need clearer communication → Implement real-time
+                  confirmations and automated updates.
+                </p>
+              </div>
+
+              <div className="flex p-[20px] text-[15px] font-normal justify-center items-center w-full bg-black tracking-[-0.2px] leading-[1.2] rounded-[8px]">
+                <p className="italic text-[#eeeeee]">
+                  Finding slots is frustrating → Show real-time availability and
+                  offer a waitlist feature.
+                </p>
+              </div>
+
               <Image
-                src=""
+                src="/arrow.png"
                 alt=""
                 height={100}
                 width={500}
@@ -632,82 +611,54 @@ const Flexy = () => {
             </div>
 
             <div className="bg-[#ffffff] rounded-[16px]  relative w-fill h-fit flex flex-col justify-items-center gap-[10px] p-[20px] shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
-              <h2 className="font-semibold text-[#888888] text-[13px] pt-[20px] xl:pt-[0px]">
+              <h2 className="font-semibold text-[#888888] text-[13px]  xl:pt-[0px]">
                 Outcomes & Future Improvements
               </h2>
 
-              <h1 className="font-bold text-[#000000] text-[20px] pt-[20px] xl:pt-[0px]">
-                Discovery
+              <h1 className="font-bold text-[#000000] text-[20px]  xl:pt-[0px]">
+                Impact Metrics
               </h1>
 
               <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
-                Experience designing and developing interactive web
-                applications, with a focus on user-friendly and scalable
-                interfaces. Skilled in conducting UX research, including user
-                surveys, interviews, and usability testing, to enhance product
-                design decisions. Proficient in front-end development,
-                interaction design, and maintaining consistency within evolving
-                design systems.
+                Flexy’s launch resulted in substantial improvements in provider
+                efficiency and engagement. 8% increase in completed
+                appointments. 5% reduction in no-shows. 7% increase in provider
+                revenue within the first month.
               </p>
 
               <div className="flex bg-amber-500 h-[1px] w-fill my-[40px]"></div>
 
-              <h1 className="font-bold text-[#1a0f0f] text-[18px] pt-[20px] xl:pt-[0px]">
-                Problem Statement
+              <h1 className="font-bold text-[#1a0f0f] text-[18px]  xl:pt-[0px]">
+                Final Takeaways
               </h1>
 
               <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
-                Experience designing and developing interactive web
-                applications, with a focus on user-friendly and scalable
-                interfaces. Skilled in conducting UX research, including user
-                surveys, interviews, and usability testing, to enhance product
-                design decisions. Proficient in front-end development,
-                interaction design, and maintaining consistency within evolving
-                design systems.
+                User-Centric Design Drives Adoption Service providers value
+                customization and flexibility in scheduling tools. A balance
+                between automation and manual control was essential for success.
+                Iterative Testing is Critical User feedback cycles led to key
+                refinements in rescheduling, financial insights, and
+                notification management, making the platform more user-friendly.
+                Product Evolution is Continuous Continuous feedback and
+                iteration are necessary to ensure long-term engagement and adapt
+                to evolving user needs.
               </p>
-
-              <div className="bg-[#fcf9f2] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center gap-[10px] p-[20px] ">
-                <ul className="font-medium text-[#9c8f6d] text-[15px] flex flex-col gap-[10px] px-[20px] tracking-[-0.2px] leading-[1.2] list-decimal items-start">
-                  <li>
-                    Experience designing and developing interactive web
-                    applications, with a focus on user-friendly and scalable
-                    interfaces.
-                  </li>
-                  <li>
-                    Skilled in conducting UX research, including user surveys,
-                    interviews, and usability testing, to enhance product design
-                    decisions.
-                  </li>
-                  <li>
-                    Proficient in front-end development, interaction design, and
-                    maintaining consistency within evolving design systems.
-                  </li>
-                </ul>
-              </div>
-
-              <h1 className="font-bold text-[#1a0f0f] text-[18px] pt-[20px] xl:pt-[0px]">
-                Significance
-              </h1>
-
-              <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
-                Experience designing and developing interactive web
-                applications, with a focus on user-friendly and scalable
-                interfaces. Skilled in conducting UX research, including user
-                surveys, interviews, and usability testing, to enhance product
-                design decisions. Proficient in front-end development,
-                interaction design, and maintaining consistency within evolving
-                design systems.
-              </p>
-
-              <Image
-                src=""
-                alt=""
-                height={100}
-                width={500}
-                className="w-full h-auto rounded-[20px] "
-              />
             </div>
 
+            <div className="bg-[#ffffff] rounded-[16px]  relative w-fill h-fit flex justify-between items-center gap-[10px] p-[20px] shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
+              <div className="text-[18px] font-semibold text-[#333333]">
+                Next: Project 2
+              </div>
+              <button className="flex justify-center items-start h-[30px] w-[30px]  rounded-full bg-[#f3f3f3]">
+                <Image
+                  src="/right-arrow.png"
+                  alt="rightarrow"
+                  width={30}
+                  height={30}
+                  className="scale-75"
+                />
+              </button>
+            </div>
           </div>
         </div>
       </div>

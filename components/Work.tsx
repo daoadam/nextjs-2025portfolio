@@ -74,17 +74,17 @@ const Work = () => {
                   <ul className=" rounded-[7px]">
                     <li className="rounded-t-[8px] border-t border-l border-r border-transparent w-[176px] bg-[#ffffff] cursor-pointer">
                       <p className="p-2 font-medium text-[15px] text-[#888888] hover:text-[#252525]">
-                        Flexy
+                        WhereNow?
                       </p>
                     </li>
                     <li className="pl-2 pr-2 border border-transparent w-[176px] font-medium text-[15px] bg-[#ffffff]">
                       <p className="pt-2 pb-2 font-medium text-[15px] border-y border-[#888888] text-[#888888] hover:text-[#252525] cursor-pointer">
-                        Project 2
+                        Flexy
                       </p>
                     </li>
                     <li className="rounded-b-[8px] border-b border-l border-r border-transparent w-[176px] font-medium text-[15px] bg-[#ffffff] cursor-pointer">
                       <p className="p-2 font-medium text-[15px] text-[#888888] hover:text-[#252525]">
-                        Project 3
+                        Amazon
                       </p>
                     </li>
                   </ul>
@@ -119,14 +119,12 @@ const Work = () => {
                 Work
               </p>
               <p className="pt-1 font-medium text-[15px] text-[#646464] hover:text-[#252525]">
+                WhereNow?
+              </p>
+              <p className="font-medium text-[15px] text-[#646464] hover:text-[#252525]">
                 Flexy
               </p>
-              <p className="font-medium text-[15px] text-[#646464] hover:text-[#252525]">
-                Project 2
-              </p>
-              <p className="font-medium text-[15px] text-[#646464] hover:text-[#252525]">
-                Project 3
-              </p>
+              
             </li>
 
             <li className="border-t border-[#8b8b8b] py-3">
@@ -149,7 +147,7 @@ const Work = () => {
       )}
 
       {/* About Section */}
-      <div className="  border-10 border-amber-600 relative w-[90%] flex flex-col h-fit mx-auto justify-center items-center xl:justify-between xl:items-start gap-[20px] overflow-visible">
+      <div className="relative w-[90%] flex flex-col h-fit mx-auto justify-center items-center xl:justify-between xl:items-start gap-[20px] overflow-visible">
         <div
           className=" relative flex flex-col xl:flex-row h-fit mx-auto justify-center items-center xl:justify-between xl:items-start overflow-visible "
           onMouseEnter={() => setIsHovered(true)}
