@@ -129,14 +129,9 @@ const About = () => {
                 </Link>
               </p>
               <p className="pt-1 font-medium text-[15px] text-[#646464] hover:text-[#252525]">
-                Project 1
+                Flexy
               </p>
-              <p className="font-medium text-[15px] text-[#646464] hover:text-[#252525]">
-                Project 2
-              </p>
-              <p className="font-medium text-[15px] text-[#646464] hover:text-[#252525]">
-                Project 3
-              </p>
+             
             </li>
 
             <li className="border-t border-[#8b8b8b] py-3">

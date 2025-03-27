@@ -79,12 +79,7 @@ const Work = () => {
                     </li>
                     <li className="pl-2 pr-2 border border-transparent w-[176px] font-medium text-[15px] bg-[#ffffff]">
                       <p className="pt-2 pb-2 font-medium text-[15px] border-y border-[#888888] text-[#888888] hover:text-[#252525] cursor-pointer">
-                        Flexy
-                      </p>
-                    </li>
-                    <li className="rounded-b-[8px] border-b border-l border-r border-transparent w-[176px] font-medium text-[15px] bg-[#ffffff] cursor-pointer">
-                      <p className="p-2 font-medium text-[15px] text-[#888888] hover:text-[#252525]">
-                        Amazon
+                        <Link href="/flexy">Flexy</Link>
                       </p>
                     </li>
                   </ul>
@@ -122,9 +117,8 @@ const Work = () => {
                 WhereNow?
               </p>
               <p className="font-medium text-[15px] text-[#646464] hover:text-[#252525]">
-                Flexy
+                <Link href="/flexy">Flexy</Link>
               </p>
-              
             </li>
 
             <li className="border-t border-[#8b8b8b] py-3">
@@ -227,6 +221,44 @@ const Work = () => {
               </p>
             </div>
 
+            <Link href="/flexy">
+            <div className="bg-[#ffffff] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center p-[20px]  shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
+              <p className="font-medium text-[#312121] text-[15px] flex flex-col tracking-[-0.2px] leading-[1.2] h-fit">
+                Flexy
+              </p>
+              <h1 className="font-semibold text-[#1a0f0f] text-[18px] pb-[8px] h-fit">
+                Mobile App
+              </h1>
+              <p className="font-medium text-[#312121] text-[15px] flex flex-col tracking-[-0.2px] pb-[10px] leading-[1.2] h-fit">
+                I conducted UX research and designed lo-fi and hi-fi wireframes
+                for Flexy, a beauty and wellness booking platform, leading to a
+                20% increase in user comfort with the UI through iterative
+                design and experimental surveying.
+              </p>
+
+              <div className="flex gap-[10px] pb-[20px]  w-fill flex-wrap ">
+                <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#190073] bg-[#f3f2f8]">
+                  User Research
+                </button>
+                <button className="font-medium rounded-[8px] px-[12px] py-[3px] w-fit text-[14px] text-[#190073] bg-[#f3f2f8]">
+                  UX/UI Design
+                </button>
+                <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#190073] bg-[#f3f2f8]">
+                  Figma
+                </button>
+              </div>
+
+              <Image
+                src="/flexyWork.png"
+                alt=""
+                height={50000}
+                width={50000}
+                className="w-full h-auto rounded-[20px] "
+              />
+            </div></Link>
+            
+
+
             <div className="bg-[#ffffff] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center p-[20px]  shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
               <p className="font-medium text-[#312121] text-[15px] flex flex-col tracking-[-0.2px] leading-[1.2] h-fit">
                 WhereNow?
@@ -264,48 +296,15 @@ const Work = () => {
                 </button>
               </div>
 
-              <Image
-                src=""
-                alt=""
-                height={100}
-                width={500}
-                className="w-full h-auto rounded-[20px] "
-              />
-            </div>
-
-            <div className="bg-[#ffffff] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center p-[20px]  shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
-              <p className="font-medium text-[#312121] text-[15px] flex flex-col tracking-[-0.2px] leading-[1.2] h-fit">
-                Flexy
-              </p>
-              <h1 className="font-semibold text-[#1a0f0f] text-[18px] pb-[8px] h-fit">
-                Mobile App
-              </h1>
-              <p className="font-medium text-[#312121] text-[15px] flex flex-col tracking-[-0.2px] pb-[10px] leading-[1.2] h-fit">
-                I conducted UX research and designed lo-fi and hi-fi wireframes
-                for Flexy, a beauty and wellness booking platform, leading to a
-                20% increase in user comfort with the UI through iterative
-                design and experimental surveying.
-              </p>
-
-              <div className="flex gap-[10px] pb-[20px]  w-fill flex-wrap ">
-                <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#190073] bg-[#f3f2f8]">
-                  User Research
-                </button>
-                <button className="font-medium rounded-[8px] px-[12px] py-[3px] w-fit text-[14px] text-[#190073] bg-[#f3f2f8]">
-                  UX/UI Design
-                </button>
-                <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#190073] bg-[#f3f2f8]">
-                  Figma
-                </button>
+              <div className="flex justify-center">
+                <Image
+                  src="/notready.png"
+                  alt=""
+                  height={1000}
+                  width={1000}
+                  className="w-[50%]"
+                />
               </div>
-
-              <Image
-                src=""
-                alt=""
-                height={100}
-                width={500}
-                className="w-full h-auto rounded-[20px] "
-              />
             </div>
 
             <div className="bg-[#ffffff] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center p-[20px]  shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
@@ -329,13 +328,15 @@ const Work = () => {
                 </button>
               </div>
 
-              <Image
-                src=""
-                alt=""
-                height={100}
-                width={500}
-                className="w-full h-auto rounded-[20px] "
-              />
+              <div className="flex justify-center">
+                <Image
+                  src="/notready.png"
+                  alt=""
+                  height={1000}
+                  width={1000}
+                  className="w-[50%]"
+                />
+              </div>
             </div>
 
             <div className="bg-[#ffffff] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center p-[20px]  shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
@@ -364,13 +365,15 @@ const Work = () => {
                 </button>
               </div>
 
-              <Image
-                src=""
-                alt=""
-                height={100}
-                width={500}
-                className="w-full h-auto rounded-[20px] "
-              />
+              <div className="flex justify-center">
+                <Image
+                  src="/notready.png"
+                  alt=""
+                  height={1000}
+                  width={1000}
+                  className="w-[50%]"
+                />
+              </div>
             </div>
 
             <div className="bg-[#ffffff] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center p-[20px]  shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
@@ -400,13 +403,15 @@ const Work = () => {
                 </button>
               </div>
 
-              <Image
-                src=""
-                alt=""
-                height={100}
-                width={500}
-                className="w-full h-auto rounded-[20px] "
-              />
+              <div className="flex justify-center">
+                <Image
+                  src="/notready.png"
+                  alt=""
+                  height={1000}
+                  width={1000}
+                  className="w-[50%]"
+                />
+              </div>
             </div>
           </div>
         </div>
