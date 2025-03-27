@@ -74,7 +74,7 @@ const Work = () => {
                   <ul className=" rounded-[7px]">
                     <li className="rounded-t-[8px] border-t border-l border-r border-transparent w-[176px] bg-[#ffffff] cursor-pointer">
                       <p className="p-2 font-medium text-[15px] text-[#888888] hover:text-[#252525]">
-                        Project 1
+                        Flexy
                       </p>
                     </li>
                     <li className="pl-2 pr-2 border border-transparent w-[176px] font-medium text-[15px] bg-[#ffffff]">
@@ -119,7 +119,7 @@ const Work = () => {
                 Work
               </p>
               <p className="pt-1 font-medium text-[15px] text-[#646464] hover:text-[#252525]">
-                Project 1
+                Flexy
               </p>
               <p className="font-medium text-[15px] text-[#646464] hover:text-[#252525]">
                 Project 2
@@ -149,22 +149,22 @@ const Work = () => {
       )}
 
       {/* About Section */}
-      <div className="  relative w-[90%] flex flex-col h-fit mx-auto justify-center items-center xl:justify-between xl:items-start gap-[20px] overflow-visible">
+      <div className="  border-10 border-amber-600 relative w-[90%] flex flex-col h-fit mx-auto justify-center items-center xl:justify-between xl:items-start gap-[20px] overflow-visible">
         <div
-          className="0 relative flex flex-col xl:flex-row h-fit mx-auto justify-center items-center xl:justify-between xl:items-start overflow-visible "
+          className=" relative flex flex-col xl:flex-row h-fit mx-auto justify-center items-center xl:justify-between xl:items-start overflow-visible "
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <div className=" sticky  xl:sticky top-[30px] w-[100%] xl:w-[33%] flex flex-col  justify-center item-center gap-[20px] ">
+          <div className=" xl:sticky xl:top-[30px] w-[100%] xl:w-[33%] flex flex-col  justify-center item-center gap-[20px] ">
             <div className="absolute top-[91px] left-[20px] w-[64px] h-[64px] bg-white z-[1] rounded-full">
               <Icon isHovered={isHovered} />
             </div>
 
             <div className=" bg-white rounded-[20px] overflow-hidden">
               <div className="relative w-full h-[132px] overflow-hidden bg-gradient-to-br from-[#c3e0d4] via-[#fffde6] to-[#faf3e6]"></div>
-              <div className=" bg-[#ffffff] relative w-fill h-fit flex flex-col justify-items-center gap-[20px] p-[20px] shadow-amber-600 shadow-md hover:shadow-[hsla(220,100%,61%,1)] hover:shadow-lg transition-transform duration-200">
+              <div className=" bg-[#ffffff] relative w-full h-fit flex flex-col justify-items-center gap-[20px] p-[20px] shadow-amber-600 shadow-md hover:shadow-[hsla(220,100%,61%,1)] hover:shadow-lg transition-transform duration-200">
                 <div className="flex flex-col gap-[5px]">
-                  <h1 className="font-bold text-[#312121] text-[22px] flex flex-col mt-[10px] tracking-[-0.6px] leading-[1.2]">
+                  <h1 className="font-bold text-[#312121] text-[24px] flex flex-col mt-[10px] tracking-[-0.6px] leading-[1.2]">
                     Hi I&apos;m Adam
                   </h1>
 
@@ -210,13 +210,13 @@ const Work = () => {
           </div>
 
           <div className=" relative w-[100%] xl:w-[65%] flex flex-col justify-center item-center gap-[20px]">
-            <div className=" relative w-fill h-fit flex justify-items-center">
+            <div className=" relative w-full h-fit flex justify-items-center">
               <h1 className="font-bold text-[#1a0f0f] text-[22px] pt-[20px] xl:pt-[0px]">
                 Selected Works
               </h1>
             </div>
 
-            <div className="bg-[#ffffff] rounded-[16px]  relative w-fill h-fit flex flex-col justify-items-center gap-[10px] p-[20px] shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
+            <div className="bg-[#ffffff] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center gap-[10px] p-[20px] shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
               <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
                 • Experience designing and developing interactive web
                 applications, with a focus on user-friendly and scalable
@@ -229,24 +229,40 @@ const Work = () => {
               </p>
             </div>
 
-            <div className="bg-[#ffffff] rounded-[16px]  relative w-fill h-fit flex flex-col justify-items-center p-[20px]  shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
+            <div className="bg-[#ffffff] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center p-[20px]  shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
               <p className="font-medium text-[#312121] text-[15px] flex flex-col tracking-[-0.2px] leading-[1.2] h-fit">
-                Project 1 Name
+                WhereNow?
               </p>
               <h1 className="font-semibold text-[#1a0f0f] text-[18px] pb-[8px] h-fit">
-                What I Did &apos;Patient Dashboard for example&apos;
+                Web App
               </h1>
-              <p className="font-medium text-[#312121] text-[15px] flex flex-col tracking-[-0.2px] pb-[10px] leading-[1.2] h-fit">
-                I launched a dashboard redesign of the lab refill process to
-                over 3,500 active patients, increasing prescriptions by 7%
+              <p className="text-[15px] font-medium text-[#312121] tracking-tight leading-[1.2] pb-[10px]">
+                I developed and pitched a travel-companion web app for the UofA
+                Tech e-Challenge, presenting it to a panel of judges. Conducted
+                research, wireframing, and high-fidelity mockups, then built a
+                responsive, accessible, and high-performance platform. Currently
+                working on acquiring users and refining the experience based on
+                feedback.
               </p>
 
-              <div className="flex gap-[10px] pb-[20px] ">
+              <div className="flex gap-[10px] pb-[20px]  w-fill flex-wrap ">
                 <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#ff0099] bg-[#fff2ff]">
                   User Research
                 </button>
                 <button className="font-medium rounded-[8px] px-[12px] py-[3px] w-fit text-[14px] text-[#ff0099] bg-[#fff2ff]">
                   UX/UI Design
+                </button>
+                <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#ff0099] bg-[#fff2ff]">
+                  React
+                </button>
+                <button className="font-medium rounded-[8px] px-[12px] py-[3px] w-fit text-[14px] text-[#ff0099] bg-[#fff2ff]">
+                  Next.js
+                </button>
+                <button className="font-medium rounded-[8px] px-[12px] py-[3px] w-fit text-[14px] text-[#ff0099] bg-[#fff2ff]">
+                  Tailwind CSS
+                </button>
+                <button className="font-medium rounded-[8px] px-[12px] py-[3px] w-fit text-[14px] text-[#ff0099] bg-[#fff2ff]">
+                  Python
                 </button>
               </div>
 
@@ -259,21 +275,56 @@ const Work = () => {
               />
             </div>
 
-            <div className="bg-[#ffffff] rounded-[16px]  relative w-fill h-fit flex flex-col justify-items-center p-[20px]  shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
+            <div className="bg-[#ffffff] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center p-[20px]  shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
               <p className="font-medium text-[#312121] text-[15px] flex flex-col tracking-[-0.2px] leading-[1.2] h-fit">
-                Project 1 Name
+                Flexy
               </p>
               <h1 className="font-semibold text-[#1a0f0f] text-[18px] pb-[8px] h-fit">
-                What I Did &apos;Patient Dashboard for example&apos;
+                Mobile App
               </h1>
               <p className="font-medium text-[#312121] text-[15px] flex flex-col tracking-[-0.2px] pb-[10px] leading-[1.2] h-fit">
-                I launched a dashboard redesign of the lab refill process to
-                over 3,500 active patients, increasing prescriptions by 7%
+                I conducted UX research and designed lo-fi and hi-fi wireframes
+                for Flexy, a beauty and wellness booking platform, leading to a
+                20% increase in user comfort with the UI through iterative
+                design and experimental surveying.
               </p>
 
-              <div className="flex gap-[10px] pb-[20px] ">
-                <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#00748a] bg-[#ebfafa]">
+              <div className="flex gap-[10px] pb-[20px]  w-fill flex-wrap ">
+                <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#190073] bg-[#f3f2f8]">
                   User Research
+                </button>
+                <button className="font-medium rounded-[8px] px-[12px] py-[3px] w-fit text-[14px] text-[#190073] bg-[#f3f2f8]">
+                  UX/UI Design
+                </button>
+                <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#190073] bg-[#f3f2f8]">
+                  Figma
+                </button>
+              </div>
+
+              <Image
+                src=""
+                alt=""
+                height={100}
+                width={500}
+                className="w-full h-auto rounded-[20px] "
+              />
+            </div>
+
+            <div className="bg-[#ffffff] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center p-[20px]  shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
+              <p className="font-medium text-[#312121] text-[15px] flex flex-col tracking-[-0.2px] leading-[1.2] h-fit">
+                Amazon
+              </p>
+              <h1 className="font-semibold text-[#1a0f0f] text-[18px] pb-[8px] h-fit">
+                Website Imitation
+              </h1>
+              <p className="font-medium text-[#312121] text-[15px] flex flex-col tracking-[-0.2px] pb-[10px] leading-[1.2] h-fit">
+                Rebuilt Amazon’s home screen, checkout, and tracking system from
+                scratch.
+              </p>
+
+              <div className="flex gap-[10px] pb-[20px]  w-fill flex-wrap ">
+                <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#00748a] bg-[#ebfafa]">
+                  HTML, CSS, Javascript
                 </button>
                 <button className="font-medium rounded-[8px] px-[12px] py-[3px] w-fit text-[14px] text-[#00748a] bg-[#ebfafa]">
                   UX/UI Design
@@ -289,24 +340,65 @@ const Work = () => {
               />
             </div>
 
-            <div className="bg-[#ffffff] rounded-[16px]  relative w-fill h-fit flex flex-col justify-items-center p-[20px]  shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
+            <div className="bg-[#ffffff] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center p-[20px]  shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
               <p className="font-medium text-[#312121] text-[15px] flex flex-col tracking-[-0.2px] leading-[1.2] h-fit">
-                Project 1 Name
+                XConvenience
               </p>
               <h1 className="font-semibold text-[#1a0f0f] text-[18px] pb-[8px] h-fit">
-                What I Did &apos;Patient Dashboard for example&apos;
+                Website Redesign
               </h1>
               <p className="font-medium text-[#312121] text-[15px] flex flex-col tracking-[-0.2px] pb-[10px] leading-[1.2] h-fit">
-                I launched a dashboard redesign of the lab refill process to
-                over 3,500 active patients, increasing prescriptions by 7%
+                I presented my website redesign concept to the stakeholders of
+                XConvenience, ensuring it aligned with the best UX practices.
               </p>
 
-              <div className="flex gap-[10px] pb-[20px] ">
+              <div className="flex gap-[10px] pb-[20px]  w-fill flex-wrap ">
                 <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#6600ff] bg-[#f8f3ff]">
                   User Research
                 </button>
+
                 <button className="font-medium rounded-[8px] px-[12px] py-[3px] w-fit text-[14px] text-[#6600ff] bg-[#f8f3ff]">
                   UX/UI Design
+                </button>
+
+                <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#6600ff] bg-[#f8f3ff]">
+                  Figma
+                </button>
+              </div>
+
+              <Image
+                src=""
+                alt=""
+                height={100}
+                width={500}
+                className="w-full h-auto rounded-[20px] "
+              />
+            </div>
+
+            <div className="bg-[#ffffff] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center p-[20px]  shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
+              <p className="text-[15px] font-medium text-[#312121] tracking-tight leading-[1.2]">
+                Jigen
+              </p>
+
+              <h1 className="text-[18px] font-semibold text-[#1a0f0f] pb-[8px]">
+                Catering Restaurant Website
+              </h1>
+
+              <p className="text-[15px] font-medium text-[#312121] tracking-tight leading-[1.2] pb-[10px]">
+                Designed and developed a catering website for Jigen,
+                streamlining online ordering and enhancing the user experience.
+              </p>
+
+              <div className="flex gap-[10px] pb-[20px]  w-fill flex-wrap ">
+                <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#cc0033] bg-[#ffe5e5]">
+                  User Research
+                </button>
+                <button className="font-medium rounded-[8px] px-[12px] py-[3px] w-fit text-[14px] text-[#cc0033] bg-[#ffe5e5]">
+                  UX/UI Design
+                </button>
+
+                <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#cc0033] bg-[#ffe5e5]">
+                  Figma
                 </button>
               </div>
 

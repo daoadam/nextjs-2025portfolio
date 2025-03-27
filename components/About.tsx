@@ -128,7 +128,9 @@ const About = () => {
           <ul className="w-full">
             <li className="py-3 flex flex-col gap-1">
               <p className="font-medium text-[15px] text-[#252525] hover:text-[#252525]">
+              <Link href="/work">
                 Work
+                </Link>
               </p>
               <p className="pt-1 font-medium text-[15px] text-[#646464] hover:text-[#252525]">
                 Project 1

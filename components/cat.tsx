@@ -14,7 +14,7 @@ const HoverCat = () => {
       {/* Image that appears when hovered */}
       <div className="">
       <Image
-        src={isHovered ? "/pixelsun.gif" : "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/wcAAwAB/ANFZrHAAAAAElFTkSuQmCC"} // Base64 transparent PNG
+        src={isHovered ? "/pixelsun.gif" : "/pethere.png"} // Base64 transparent PNG
         alt="Pixel Sun"
         width={200}
         height={200}
