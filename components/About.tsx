@@ -129,7 +129,9 @@ const About = () => {
                 </Link>
               </p>
               <p className="pt-1 font-medium text-[15px] text-[#646464] hover:text-[#252525]">
-                Flexy
+              <Link href="/flexy">
+                        Flexy
+                        </Link>
               </p>
              
             </li>
@@ -142,7 +144,11 @@ const About = () => {
 
             <li className="border-t border-[#8b8b8b] py-3">
               <p className="font-medium text-[15px] text-[#252525] hover:text-[#252525]">
-                Resume
+              <Link 
+                href="https://docs.google.com/document/d/13yIsupujsWupLxjXvPQ-OuslObz2rOOAjm9TGrWfs6Y/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"  
+              >Resume</Link>
               </p>
             </li>
           </ul>
@@ -412,7 +418,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className=" bg-white flex flex-col items-start p-[20px] w-full rounded-[20px] shadow-amber-600 shadow-md hover:shadow-[hsla(220,100%,61%,1)] hover:shadow-lg transition-transform duration-200 ">
+        <div className=" outline-0 bg-white flex flex-col items-start p-[20px] w-full rounded-[20px] shadow-amber-600 shadow-md hover:shadow-[hsla(220,100%,61%,1)] hover:shadow-lg transition-transform duration-200 ">
           <h1 className="text-[22px] font-semibold mb-5 text-[#1a0f0f]">When not working...</h1>
           <EmblaCarousel slides={SLIDES} options={OPTIONS} />
         </div>

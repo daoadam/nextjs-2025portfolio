@@ -89,16 +89,18 @@ const Work = () => {
             <p className="font-bold text-[15px] text-[#888888] hover:text-[#252525] cursor-pointer">
               <Link href="/about">About</Link>
             </p>
-            <p className="font-bold text-[15px] text-[#888888] hover:text-[#252525] cursor-pointer">
-              Other
-            </p>
+            
             <p className="font-bold text-[15px] text-[#888888] hover:text-[#252525] cursor-pointer">
               <a
                 href="https://docs.google.com/document/d/13yIsupujsWupLxjXvPQ-OuslObz2rOOAjm9TGrWfs6Y/edit?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Resume
+                     <Link 
+                href="https://docs.google.com/document/d/13yIsupujsWupLxjXvPQ-OuslObz2rOOAjm9TGrWfs6Y/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"  
+              >Resume</Link>
               </a>
             </p>
           </>
@@ -126,14 +128,16 @@ const Work = () => {
             </li>
 
             <li className="border-t border-[#8b8b8b] py-3">
-              <p className="font-medium text-[15px] text-[#252525] hover:text-[#252525]">
-                Other
-              </p>
+              
             </li>
 
             <li className="border-t border-[#8b8b8b] py-3">
               <p className="font-medium text-[15px] text-[#252525] hover:text-[#252525]">
-                Resume
+              <Link 
+                href="https://docs.google.com/document/d/13yIsupujsWupLxjXvPQ-OuslObz2rOOAjm9TGrWfs6Y/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"  
+              >Resume</Link>
               </p>
             </li>
           </ul>

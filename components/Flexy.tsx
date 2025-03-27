@@ -119,7 +119,11 @@ const Flexy = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Resume
+                                 <Link 
+                href="https://docs.google.com/document/d/13yIsupujsWupLxjXvPQ-OuslObz2rOOAjm9TGrWfs6Y/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"  
+              >Resume</Link>
                             </a>
                         </p>
                     </>
@@ -137,12 +141,7 @@ const Flexy = () => {
                             <p className="pt-1 font-medium text-[15px] text-[#646464] hover:text-[#252525]">
                                 Flexy
                             </p>
-                            <p className="font-medium text-[15px] text-[#646464] hover:text-[#252525]">
-                                Project 2
-                            </p>
-                            <p className="font-medium text-[15px] text-[#646464] hover:text-[#252525]">
-                                Project 3
-                            </p>
+                            
                         </li>
 
                         <li className="border-t border-[#8b8b8b] py-3">
@@ -150,9 +149,11 @@ const Flexy = () => {
                         </li>
 
                         <li className="border-t border-[#8b8b8b] py-3">
-                            <p className="font-medium text-[15px] text-[#252525] hover:text-[#252525]">
-                                Resume
-                            </p>
+                        <Link 
+                href="https://docs.google.com/document/d/13yIsupujsWupLxjXvPQ-OuslObz2rOOAjm9TGrWfs6Y/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"  
+              >Resume</Link>
                         </li>
                     </ul>
                 </div>

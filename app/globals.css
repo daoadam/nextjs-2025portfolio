@@ -118,6 +118,11 @@ body {
   align-items: center;
 }
 
+.embla__button:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 .2rem transparent; /* Hide border */
+}
+
 .embla__button {
   -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
   -webkit-appearance: none;
