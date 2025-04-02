@@ -66,7 +66,7 @@ body {
   max-width: 60rem;
   margin: auto;
   height: 100%;
-  --slide-height: 25rem;
+  --slide-height: 20rem;
   --slide-spacing: 1rem;
   --slide-size: 40%;  /* Default size for larger screens */
 }
