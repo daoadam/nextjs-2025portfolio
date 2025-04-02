@@ -853,7 +853,7 @@ const WhereNow = () => {
 
               <div className=" h-fit w-fill flex justify-center items-center">
                 <Image
-                  src="/WhereNowHifi1.jpg"
+                  src="/WhereNowHiFi1.jpg"
                   alt=""
                   height={50000}
                   width={50000}
@@ -863,7 +863,7 @@ const WhereNow = () => {
 
               <div className=" h-fit w-fill flex justify-center items-center">
                 <Image
-                  src="/WhereNowHifi2.jpg"
+                  src="/WhereNowHiFi2.jpg"
                   alt=""
                   height={50000}
                   width={50000}
