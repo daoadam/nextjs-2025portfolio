@@ -74,7 +74,7 @@ const Work = () => {
                   <ul className=" rounded-[7px]">
                     <li className="rounded-t-[8px] border-t border-l border-r border-transparent w-[176px] bg-[#ffffff] cursor-pointer">
                       <p className="p-2 font-medium text-[15px] text-[#888888] hover:text-[#252525]">
-                        WhereNow?
+                        <Link href="/wherenow">WhereNow</Link>
                       </p>
                     </li>
                     <li className="pl-2 pr-2 border border-transparent w-[176px] font-medium text-[15px] bg-[#ffffff]">
@@ -89,18 +89,20 @@ const Work = () => {
             <p className="font-bold text-[15px] text-[#888888] hover:text-[#252525] cursor-pointer">
               <Link href="/about">About</Link>
             </p>
-            
+
             <p className="font-bold text-[15px] text-[#888888] hover:text-[#252525] cursor-pointer">
               <a
                 href="https://docs.google.com/document/d/13yIsupujsWupLxjXvPQ-OuslObz2rOOAjm9TGrWfs6Y/edit?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                     <Link 
-                href="https://docs.google.com/document/d/13yIsupujsWupLxjXvPQ-OuslObz2rOOAjm9TGrWfs6Y/edit?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"  
-              >Resume</Link>
+                <Link
+                  href="https://docs.google.com/document/d/13yIsupujsWupLxjXvPQ-OuslObz2rOOAjm9TGrWfs6Y/edit?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Resume
+                </Link>
               </a>
             </p>
           </>
@@ -116,7 +118,7 @@ const Work = () => {
                 Work
               </p>
               <p className="pt-1 font-medium text-[15px] text-[#646464] hover:text-[#252525]">
-                WhereNow?
+                <Link href="/wherenow">WhereNow</Link>
               </p>
               <p className="font-medium text-[15px] text-[#646464] hover:text-[#252525]">
                 <Link href="/flexy">Flexy</Link>
@@ -127,17 +129,17 @@ const Work = () => {
               <p className="font-medium text-[15px] text-[#000000]">About</p>
             </li>
 
-            <li className="border-t border-[#8b8b8b] py-3">
-              
-            </li>
+            <li className="border-t border-[#8b8b8b] py-3"></li>
 
             <li className="border-t border-[#8b8b8b] py-3">
               <p className="font-medium text-[15px] text-[#252525] hover:text-[#252525]">
-              <Link 
-                href="https://docs.google.com/document/d/13yIsupujsWupLxjXvPQ-OuslObz2rOOAjm9TGrWfs6Y/edit?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"  
-              >Resume</Link>
+                <Link
+                  href="https://docs.google.com/document/d/13yIsupujsWupLxjXvPQ-OuslObz2rOOAjm9TGrWfs6Y/edit?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Resume
+                </Link>
               </p>
             </li>
           </ul>
@@ -225,91 +227,92 @@ const Work = () => {
               </p>
             </div>
 
+            <Link href="/wherenow">
+              <div className="bg-[#ffffff] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center p-[20px]  shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
+                <p className="font-medium text-[#312121] text-[15px] flex flex-col tracking-[-0.2px] leading-[1.2] h-fit">
+                  WhereNow?
+                </p>
+                <h1 className="font-semibold text-[#1a0f0f] text-[18px] pb-[8px] h-fit">
+                  Web App
+                </h1>
+                <p className="text-[15px] font-medium text-[#312121] tracking-tight leading-[1.2] pb-[10px]">
+                  I developed and pitched a travel-companion web app for the
+                  UofA Tech e-Challenge, presenting it to a panel of judges.
+                  Conducted research, wireframing, and high-fidelity mockups,
+                  then built a responsive, accessible, and high-performance
+                  platform. Currently working on acquiring users and refining
+                  the experience based on feedback.
+                </p>
+
+                <div className="flex gap-[10px] pb-[20px]  w-fill flex-wrap ">
+                  <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#ff0099] bg-[#fff2ff]">
+                    User Research
+                  </button>
+                  <button className="font-medium rounded-[8px] px-[12px] py-[3px] w-fit text-[14px] text-[#ff0099] bg-[#fff2ff]">
+                    UX/UI Design
+                  </button>
+                  <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#ff0099] bg-[#fff2ff]">
+                    React
+                  </button>
+                  <button className="font-medium rounded-[8px] px-[12px] py-[3px] w-fit text-[14px] text-[#ff0099] bg-[#fff2ff]">
+                    Next.js
+                  </button>
+                  <button className="font-medium rounded-[8px] px-[12px] py-[3px] w-fit text-[14px] text-[#ff0099] bg-[#fff2ff]">
+                    Tailwind CSS
+                  </button>
+                  <button className="font-medium rounded-[8px] px-[12px] py-[3px] w-fit text-[14px] text-[#ff0099] bg-[#fff2ff]">
+                    Python
+                  </button>
+                </div>
+
+                <div className="flex justify-center">
+                  <Image
+                    src="/WhereNowThumb.jpg"
+                    alt=""
+                    height={50000}
+                    width={50000}
+                    className="w-full h-auto rounded-[20px]"
+                  />
+                </div>
+              </div>
+            </Link>
+
             <Link href="/flexy">
-            <div className="bg-[#ffffff] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center p-[20px]  shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
-              <p className="font-medium text-[#312121] text-[15px] flex flex-col tracking-[-0.2px] leading-[1.2] h-fit">
-                Flexy
-              </p>
-              <h1 className="font-semibold text-[#1a0f0f] text-[18px] pb-[8px] h-fit">
-                Mobile App
-              </h1>
-              <p className="font-medium text-[#312121] text-[15px] flex flex-col tracking-[-0.2px] pb-[10px] leading-[1.2] h-fit">
-                I conducted UX research and designed lo-fi and hi-fi wireframes
-                for Flexy, a beauty and wellness booking platform, leading to a
-                20% increase in user comfort with the UI through iterative
-                design and experimental surveying.
-              </p>
+              <div className="bg-[#ffffff] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center p-[20px]  shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
+                <p className="font-medium text-[#312121] text-[15px] flex flex-col tracking-[-0.2px] leading-[1.2] h-fit">
+                  Flexy
+                </p>
+                <h1 className="font-semibold text-[#1a0f0f] text-[18px] pb-[8px] h-fit">
+                  Mobile App
+                </h1>
+                <p className="font-medium text-[#312121] text-[15px] flex flex-col tracking-[-0.2px] pb-[10px] leading-[1.2] h-fit">
+                  I conducted UX research and designed lo-fi and hi-fi
+                  wireframes for Flexy, a beauty and wellness booking platform,
+                  leading to a 20% increase in user comfort with the UI through
+                  iterative design and experimental surveying.
+                </p>
 
-              <div className="flex gap-[10px] pb-[20px]  w-fill flex-wrap ">
-                <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#190073] bg-[#f3f2f8]">
-                  User Research
-                </button>
-                <button className="font-medium rounded-[8px] px-[12px] py-[3px] w-fit text-[14px] text-[#190073] bg-[#f3f2f8]">
-                  UX/UI Design
-                </button>
-                <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#190073] bg-[#f3f2f8]">
-                  Figma
-                </button>
-              </div>
+                <div className="flex gap-[10px] pb-[20px]  w-fill flex-wrap ">
+                  <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#190073] bg-[#f3f2f8]">
+                    User Research
+                  </button>
+                  <button className="font-medium rounded-[8px] px-[12px] py-[3px] w-fit text-[14px] text-[#190073] bg-[#f3f2f8]">
+                    UX/UI Design
+                  </button>
+                  <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#190073] bg-[#f3f2f8]">
+                    Figma
+                  </button>
+                </div>
 
-              <Image
-                src="/flexyWork.png"
-                alt=""
-                height={50000}
-                width={50000}
-                className="w-full h-auto rounded-[20px] "
-              />
-            </div></Link>
-            
-
-
-            <div className="bg-[#ffffff] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center p-[20px]  shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
-              <p className="font-medium text-[#312121] text-[15px] flex flex-col tracking-[-0.2px] leading-[1.2] h-fit">
-                WhereNow?
-              </p>
-              <h1 className="font-semibold text-[#1a0f0f] text-[18px] pb-[8px] h-fit">
-                Web App
-              </h1>
-              <p className="text-[15px] font-medium text-[#312121] tracking-tight leading-[1.2] pb-[10px]">
-                I developed and pitched a travel-companion web app for the UofA
-                Tech e-Challenge, presenting it to a panel of judges. Conducted
-                research, wireframing, and high-fidelity mockups, then built a
-                responsive, accessible, and high-performance platform. Currently
-                working on acquiring users and refining the experience based on
-                feedback.
-              </p>
-
-              <div className="flex gap-[10px] pb-[20px]  w-fill flex-wrap ">
-                <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#ff0099] bg-[#fff2ff]">
-                  User Research
-                </button>
-                <button className="font-medium rounded-[8px] px-[12px] py-[3px] w-fit text-[14px] text-[#ff0099] bg-[#fff2ff]">
-                  UX/UI Design
-                </button>
-                <button className="font-medium rounded-[8px] px-[12px] py-[3px]  w-fit text-[14px] text-[#ff0099] bg-[#fff2ff]">
-                  React
-                </button>
-                <button className="font-medium rounded-[8px] px-[12px] py-[3px] w-fit text-[14px] text-[#ff0099] bg-[#fff2ff]">
-                  Next.js
-                </button>
-                <button className="font-medium rounded-[8px] px-[12px] py-[3px] w-fit text-[14px] text-[#ff0099] bg-[#fff2ff]">
-                  Tailwind CSS
-                </button>
-                <button className="font-medium rounded-[8px] px-[12px] py-[3px] w-fit text-[14px] text-[#ff0099] bg-[#fff2ff]">
-                  Python
-                </button>
-              </div>
-
-              <div className="flex justify-center">
                 <Image
-                  src="/notready.png"
+                  src="/flexyWork.png"
                   alt=""
-                  height={1000}
-                  width={1000}
-                  className="w-[50%]"
+                  height={50000}
+                  width={50000}
+                  className="w-full h-auto rounded-[20px] "
                 />
               </div>
-            </div>
+            </Link>
 
             <div className="bg-[#ffffff] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center p-[20px]  shadow-[hsla(220,100%,61%,1)] shadow-md hover:shadow-amber-600 hover:shadow-lg transition-transform duration-200">
               <p className="font-medium text-[#312121] text-[15px] flex flex-col tracking-[-0.2px] leading-[1.2] h-fit">

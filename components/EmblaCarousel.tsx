@@ -14,6 +14,7 @@ type PropType = {
   slides: string[];
   options?: EmblaOptionsType;
   className?: string;
+  style?: { [key: string]: string | number };
 };
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
@@ -31,7 +32,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   } = usePrevNextButtons(emblaApi);
 
   return (
-    <div className="embla">
+    <div className="embla" style={props.style}>
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((imageSrc, index) => (

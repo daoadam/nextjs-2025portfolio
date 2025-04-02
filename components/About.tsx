@@ -2,18 +2,18 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import  EmblaCarousel  from "./EmblaCarousel";
-import { EmblaOptionsType } from 'embla-carousel'
+import EmblaCarousel from "./EmblaCarousel";
+import { EmblaOptionsType } from "embla-carousel";
 import Icon from "./icon";
 
-const OPTIONS: EmblaOptionsType = { loop: true, align: "start" }
+const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
 
 const SLIDES = [
   "/music.jpg",
   "/twomonkeys.jpg",
   "/perth.jpg",
   "/powerlifting.jpg",
-]
+];
 
 const About = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -76,10 +76,7 @@ const About = () => {
               onMouseLeave={() => setIsHovered(false)}
             >
               <p className="font-bold text-[15px] text-[#888888] hover:text-[#252525] cursor-pointer">
-
-                <Link href="/work">
-                Work
-                </Link>
+                <Link href="/work">Work</Link>
               </p>
 
               {/*Work Dropdown Menu*/}
@@ -88,17 +85,14 @@ const About = () => {
                   <ul className=" rounded-[7px]">
                     <li className=" rounded-t-[8px] border-t border-l border-r border-transparent w-[176px] bg-[#ffffff] cursor-pointer">
                       <p className=" p-2 font-medium text-[15px] text-[#888888] hover:text-[#252525]">
-                        WhereNow?
+                        <Link href="/wherenow">WhereNow</Link>
                       </p>
                     </li>
                     <li className=" pl-2 pr-2 border border-transparent  w-[176px] font-medium text-[15px] bg-[#ffffff]">
                       <p className="pt-2 pb-2 font-medium text-[15px] border-y text-[#888888] hover:text-[#252525] cursor-pointer">
-                        <Link href="/flexy">
-                        Flexy
-                        </Link>
+                        <Link href="/flexy">Flexy</Link>
                       </p>
                     </li>
-                    
                   </ul>
                 </div>
               )}
@@ -106,13 +100,15 @@ const About = () => {
             <p className="font-bold text-[15px] text-[#333333] hover:text-[#252525] cursor-pointer">
               About
             </p>
-           
+
             <p className="font-bold text-[15px] text-[#888888] hover:text-[#252525] cursor-pointer">
-              <Link 
+              <Link
                 href="https://docs.google.com/document/d/13yIsupujsWupLxjXvPQ-OuslObz2rOOAjm9TGrWfs6Y/edit?usp=sharing"
                 target="_blank"
-                rel="noopener noreferrer"  
-              >Resume</Link>
+                rel="noopener noreferrer"
+              >
+                Resume
+              </Link>
             </p>
           </>
         )}
@@ -124,31 +120,26 @@ const About = () => {
           <ul className="w-full">
             <li className="py-3 flex flex-col gap-1">
               <p className="font-medium text-[15px] text-[#252525] hover:text-[#252525]">
-              <Link href="/work">
-                Work
-                </Link>
+                <Link href="/work">Work</Link>
               </p>
               <p className="pt-1 font-medium text-[15px] text-[#646464] hover:text-[#252525]">
-              <Link href="/flexy">
-                        Flexy
-                        </Link>
+                <Link href="/flexy">Flexy</Link>
               </p>
-             
             </li>
 
             <li className="border-t border-[#8b8b8b] py-3">
               <p className="font-medium text-[15px] text-[#000000]">About</p>
             </li>
 
-         
-
             <li className="border-t border-[#8b8b8b] py-3">
               <p className="font-medium text-[15px] text-[#252525] hover:text-[#252525]">
-              <Link 
-                href="https://docs.google.com/document/d/13yIsupujsWupLxjXvPQ-OuslObz2rOOAjm9TGrWfs6Y/edit?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"  
-              >Resume</Link>
+                <Link
+                  href="https://docs.google.com/document/d/13yIsupujsWupLxjXvPQ-OuslObz2rOOAjm9TGrWfs6Y/edit?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Resume
+                </Link>
               </p>
             </li>
           </ul>
@@ -159,7 +150,9 @@ const About = () => {
         <div className="relative flex flex-col xl:flex-row h-fit mx-auto justify-center items-center xl:justify-between xl:items-start">
           <div className=" relative w-[100%] xl:w-[40%] flex flex-col  justify-center item-center gap-[20px] ">
             <div className="  relative w-fill h-fit flex justify-items-center">
-              <h1 className="font-bold text-[#1a0f0f] text-[22px] ">About me</h1>
+              <h1 className="font-bold text-[#1a0f0f] text-[22px] ">
+                About me
+              </h1>
             </div>
 
             {/* Hover Container - Triggers hover when entering this section */}
@@ -173,7 +166,6 @@ const About = () => {
                 <Icon isHovered={isHovered} />
               </div>
 
-              
               <h1 className="font-semibold text-[#1a0f0f] text-[18px]">
                 My Story
               </h1>
@@ -419,7 +411,9 @@ const About = () => {
         </div>
 
         <div className=" outline-0 bg-white flex flex-col items-start p-[20px] w-full rounded-[20px] shadow-amber-600 shadow-md hover:shadow-[hsla(220,100%,61%,1)] hover:shadow-lg transition-transform duration-200 ">
-          <h1 className="text-[22px] font-semibold mb-5 text-[#1a0f0f]">When not working...</h1>
+          <h1 className="text-[22px] font-semibold mb-5 text-[#1a0f0f]">
+            When not working...
+          </h1>
           <EmblaCarousel slides={SLIDES} options={OPTIONS} />
         </div>
       </div>
