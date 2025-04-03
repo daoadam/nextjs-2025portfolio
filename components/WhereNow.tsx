@@ -522,6 +522,25 @@ const WhereNow = () => {
               </div>
 
               <h1 className="font-bold text-[#000000] text-[20px]  xl:pt-[0px]">
+                Project Timeline
+              </h1>
+
+              <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
+                  A project timeline was made with the goal of prioritizing features that would be most useful to users and that would be easy to implement.
+                  According to the specific time-frame given our team section workloads and what was expected weekly.
+              </p>
+
+              <div className=" h-fit w-fill flex justify-center items-center">
+                <Image
+                  src="/WhereNowTimeline.jpg"
+                  alt=""
+                  height={2000}
+                  width={2000}
+                  className="w-[120%]"
+                />
+              </div>
+
+              <h1 className="font-bold text-[#000000] text-[20px]  xl:pt-[0px]">
                 Key features for the MVP
               </h1>
 
