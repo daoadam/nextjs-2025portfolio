@@ -279,8 +279,8 @@ const WhereNow = () => {
                 expectations of users who would use a travelling companion app.
                 <br />
                 <br />
-                I conceptually thought of the functions that were required to
-                answer the basic needs of users.
+                I conceptually thought of the original functions that were
+                required to answer the basic needs of users.
                 <br />
                 <br />
                 I designed the lo-fi and hi-fi wireframes for the app, ensuring
@@ -661,7 +661,7 @@ const WhereNow = () => {
 
               <div className=" h-fit w-fill flex justify-center items-center">
                 <Image
-                  src="/WhereNowUserPersonaIsabelle.jpg"
+                  src="/WherenowUserPersonaIsabelle.jpg"
                   alt=""
                   height={2000}
                   width={2000}
@@ -813,7 +813,7 @@ const WhereNow = () => {
                   alt=""
                   height={50000}
                   width={50000}
-                  className="w-[90%]"
+                  className="w-[100%]"
                 />
               </div>
 
@@ -823,7 +823,7 @@ const WhereNow = () => {
                   alt=""
                   height={50000}
                   width={50000}
-                  className="w-[90%]"
+                  className="w-[100%]"
                 />
               </div>
 
@@ -833,7 +833,7 @@ const WhereNow = () => {
                   alt=""
                   height={50000}
                   width={50000}
-                  className="w-[90%]"
+                  className="w-[100%]"
                 />
               </div>
 
@@ -843,7 +843,7 @@ const WhereNow = () => {
                   alt=""
                   height={50000}
                   width={50000}
-                  className="w-[90%]"
+                  className="w-[100%]"
                 />
               </div>
 
@@ -857,7 +857,7 @@ const WhereNow = () => {
                   alt=""
                   height={50000}
                   width={50000}
-                  className="w-[90%]"
+                  className="w-[100%]"
                 />
               </div>
 
@@ -867,7 +867,7 @@ const WhereNow = () => {
                   alt=""
                   height={50000}
                   width={50000}
-                  className="w-[90%]"
+                  className="w-[100%]"
                 />
               </div>
 
@@ -877,7 +877,7 @@ const WhereNow = () => {
                   alt=""
                   height={50000}
                   width={50000}
-                  className="w-[90%]"
+                  className="w-[100%]"
                 />
               </div>
 
@@ -887,7 +887,106 @@ const WhereNow = () => {
                   alt=""
                   height={50000}
                   width={50000}
-                  className="w-[90%]"
+                  className="w-[100%]"
+                />
+              </div>
+
+              <h1 className="font-bold text-[#1a0f0f] text-[18px]  xl:pt-[0px]">
+                A/B Testing
+              </h1>
+
+              <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
+                For the WhereNow travel app, I designed and ran three targeted
+                A/B tests focused on improving user navigation, trip planning
+                efficiency, and overall usability:
+              </p>
+
+              <h1 className="font-bold text-[#1a0f0f] text-[18px]  xl:pt-[0px]">
+                Calender View Optimization
+              </h1>
+
+              <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
+              Old: Users could only switch between two days at a time. <br/>
+              New (Test): A week-view scrolling calendar was introduced to give users better visibility over their full itinerary.
+              </p>
+
+              <div className="bg-[#f2f7fc] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center gap-[10px] p-[20px] ">
+                <ul className="font-medium text-[#6d7c9c] text-[15px] flex flex-col gap-[10px] px-[20px] tracking-[-0.2px] leading-[1.2] list-disc items-start">
+                  <li>
+                  Goal: Reduce friction when planning multi-day trips and encourage deeper engagement.
+                  </li>
+                  <li>
+                  Metric Tracked: Number of days viewed, edits on days beyond Day 2, and session duration on itinerary screen.
+                  </li>
+                </ul>
+              </div>
+
+              <div className=" h-fit w-fill flex justify-center items-center">
+                <Image
+                  src="/WhereNowAB1.jpg"
+                  alt=""
+                  height={50000}
+                  width={50000}
+                  className="w-[100%]"
+                />
+              </div>
+
+              <h1 className="font-bold text-[#1a0f0f] text-[18px]  xl:pt-[0px]">
+              Improved Bottom Navigation Clarity
+              </h1>
+
+              <div className="bg-[#f2f7fc] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center gap-[10px] p-[20px] ">
+                <ul className="font-medium text-[#6d7c9c] text-[15px] flex flex-col gap-[10px] px-[20px] tracking-[-0.2px] leading-[1.2] list-disc items-start">
+                  <li>
+                  Goal: Help first-time users understand the app layout more quickly.
+                  </li>
+                  <li>
+                  Metric Tracked: Time to first action, navigation errors, and completion rate of key flows.
+                  </li>
+                </ul>
+              </div>
+
+              <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
+              Old: Bottom nav used icons only. <br/>
+              New (Test): Text labels were added below each icon (e.g., Home, Map, Plan, Settings).
+              </p>
+
+              <div className=" h-fit w-fill flex justify-center items-center">
+                <Image
+                  src="/WhereNowAB3.jpg"
+                  alt=""
+                  height={50000}
+                  width={50000}
+                  className="w-[100%]"
+                />
+              </div>
+
+              <h1 className="font-bold text-[#1a0f0f] text-[18px]  xl:pt-[0px]">
+              Floating Action Button (FAB) Redesign
+              </h1>
+
+              <p className="font-medium text-[#312121] text-[15px] flex flex-col gap-[10px] tracking-[-0.2px] leading-[1.2]">
+              Old: Tapping the + icon led to a full-screen decision page: “Create your own” vs. “Use AI Magic.” <br/>
+              New (Test): Introduced a quick-access floating menu that lets users instantly choose between Trip Plan and Guide.
+              </p>
+              <div className="bg-[#f2f7fc] rounded-[16px]  relative w-full h-fit flex flex-col justify-items-center gap-[10px] p-[20px] ">
+                <ul className="font-medium text-[#6d7c9c] text-[15px] flex flex-col gap-[10px] px-[20px] tracking-[-0.2px] leading-[1.2] list-disc items-start">
+                  <li>
+                  Goal: Streamline the creation flow and reduce drop-off from the decision screen.
+                  </li>
+                  <li>
+                  Metric Tracked: Click-through rates for each FAB option, trip creation starts, and plan completion rate.
+                  </li>
+                </ul>
+              </div>
+
+              <div className=" h-fit w-fill flex justify-center items-center">
+                <Image
+                  src="/WhereNowAB2.jpg"
+                  alt=""
+                  height={50000}
+                  width={50000}
+                  className="w-[100%]"
                 />
               </div>
 
@@ -919,6 +1018,17 @@ const WhereNow = () => {
                   <li>
                     Bottom Nav bar should include headers as just icons is not
                     enough
+                  </li>
+
+                  <li>
+                    Users preferred when the calendar had a whole 7 days of
+                    options rather than just 2
+                  </li>
+
+                  <li>
+                    Users enjoyed the floating action button after pressing the
+                    + in the bottom navigation bar better streamlining the
+                    creation flow.
                   </li>
                 </ul>
               </div>
