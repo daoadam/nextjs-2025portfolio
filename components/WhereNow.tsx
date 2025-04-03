@@ -534,9 +534,9 @@ const WhereNow = () => {
                 <Image
                   src="/WhereNowTimeline.jpg"
                   alt=""
-                  height={2000}
-                  width={2000}
-                  className="w-[120%]"
+                  height={20000}
+                  width={20000}
+                  className="w-[100%]"
                 />
               </div>
 
